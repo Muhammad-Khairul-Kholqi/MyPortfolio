@@ -1,0 +1,23 @@
+@media (max-width: 580px) {
+    .judul-lagu,
+    .waktu {
+        font-size: 12px;
+    }
+
+    .artist {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 550px) {
+    .container-music {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: flex-start; 
+    }
+
+    .waktu {
+        margin-left: 56px;
+    }
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Sora', sans-serif;
+}
+
+.container-content {
+    overflow-x: auto;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+
+.container-content::-webkit-scrollbar {
+    display: none;  
+}
+
+@media (max-width: 470px) {
+    .sidebar {
+        margin-left: -20px;
+    }
+}

@@ -1,0 +1,37 @@
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.shake-animation {
+  animation: tilt-shaking 0.5s infinite;
+}
+
+@media (max-width: 380px) {
+    .ketrampilan,
+    .pendidikan,
+    .pengalaman {
+        width: 200px;
+    }
+
+    .deskripsi,
+    .nama-sekola,
+    .nama-company,
+    .tugas {
+        font-size: 10px;
+        width: 170px;
+    }
+
+    .title-keterampilan {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+  .deskripsi-aboutme {
+    font-size: 13px;
+  }
+}

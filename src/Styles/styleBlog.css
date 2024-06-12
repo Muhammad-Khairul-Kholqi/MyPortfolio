@@ -1,0 +1,23 @@
+.conteiner-code {
+    overflow-x: auto;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+
+.conteiner-code::-webkit-scrollbar {
+    display: none;  
+}
+
+@media (max-width: 600px) {
+    .title-code {
+        font-size: 18px;
+    }
+
+    .deskripsi-code {
+        font-size: 12px;
+    }
+
+    .deksripsi-project {
+        font-size: 12px;
+    }
+}
