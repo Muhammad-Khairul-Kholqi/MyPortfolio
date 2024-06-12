@@ -16,6 +16,7 @@ const Music = () => {
 
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A vel obcaecati nesciunt voluptates delectus inventore fugit, iure quis quia officia?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, aliquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, aliquam.</p>
         </div>
     )
 }
