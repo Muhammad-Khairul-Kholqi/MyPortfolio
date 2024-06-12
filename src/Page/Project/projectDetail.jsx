@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { FaGithubAlt } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
@@ -29,7 +31,7 @@ const projectsData = [
     image: schoolImage,
     technology: ["Vue", "Firebase"],
     github: "https://github.com/user/project2",
-    demo: "https://project2.demo",
+    demo: "",
     techImages: [
       githubImage,
       githubImage
@@ -38,6 +40,7 @@ const projectsData = [
 ];
 
 const ProjectDetail = () => {
+  AOS.init();
   const { id } = useParams();
   const project = projectsData.find((project) => project.id === parseInt(id));
 
@@ -45,7 +48,17 @@ const ProjectDetail = () => {
 
   return (
     <>
-      <div className="px-[20px]">
+      <div 
+        className="px-[20px]"
+        data-aos="fade-down"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
         <Link to="/project">
           <div className="flex items-center gap-[5px] justify-center mt-[50px]">
             <IoArrowBackCircleOutline className="text-[#525252] text-[18px]" />
@@ -86,13 +99,17 @@ const ProjectDetail = () => {
                   <p>Source Code</p>
                 </div>
               </a>
-              <p>|</p>
-              <a href={project.demo} target="_blank" rel="noopener noreferrer" className="hover:underline">
-                <div className="flex gap-[5px] items-center">
-                  <FiExternalLink className="text-[16px]" />
-                  <p>Live Demo</p>
-                </div>
-              </a>
+              {project.demo && (
+                <>
+                  <p>|</p>
+                  <a href={project.demo} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                    <div className="flex gap-[5px] items-center">
+                      <FiExternalLink className="text-[16px]" />
+                      <p>Live Demo</p>
+                    </div>
+                  </a>
+                </>
+              )}
             </div>
           </div>
         </div>

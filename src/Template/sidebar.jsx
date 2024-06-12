@@ -8,6 +8,7 @@ import { BiHomeSmile } from "react-icons/bi";
 import { LiaBoxSolid } from "react-icons/lia";
 import { IoMdPaperPlane } from "react-icons/io";
 import { TbPencilMinus } from "react-icons/tb";
+import { TbRouteSquare } from "react-icons/tb";
 import { FaLinkedinIn, FaInstagram, FaWhatsapp, FaSpotify } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { LuLeaf } from "react-icons/lu";
@@ -94,9 +95,9 @@ const Sidebar = () => {
                     </div>
                 </Link>
 
-                <Link to="#" className="w-full mt-[10px]">
-                    <div className={`flex items-center gap-5 hover:bg-[#E5E5E5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '#' ? 'bg-[#E5E5E5] text-black' : ''}`}> 
-                        <TbLayoutDashboard className="icon-menu text-[18px]" />
+                <Link to="/roadmap" className="w-full mt-[10px]">
+                    <div className={`flex items-center gap-5 hover:bg-[#E5E5E5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/roadmap' ? 'bg-[#E5E5E5] text-black' : ''}`}> 
+                        <TbRouteSquare className="icon-menu text-[18px]" />
                         <p className="text-menu text-[15px]">Roadmap</p>
                     </div>
                 </Link>

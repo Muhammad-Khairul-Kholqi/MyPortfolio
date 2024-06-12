@@ -9,6 +9,7 @@ import Sidebar from './Template/sidebar';
 import Home from './Page/Home/home';
 import AboutMe from './Page/AboutMe/aboutMe';
 import Dashboard from './Page/Dashboard/dashboard';
+import Roadmap from './Page/Roadmap/roadmap';
 import Project from './Page/Project/project';
 import ProjectDetail from './Page/Project/projectDetail';
 import Contact from './Page/Contact/contact';
@@ -68,6 +69,16 @@ const AnimatedRoutes = () => {
             </DefaultLayout>
           }
         />
+         <Route
+          path="/roadmap"
+          element={
+            <DefaultLayout>
+              <PageTransition>
+                <Roadmap />
+              </PageTransition>
+            </DefaultLayout>
+          }
+        />
         <Route
           path="/project"
           element={
@@ -81,9 +92,7 @@ const AnimatedRoutes = () => {
         <Route
           path="/project/:id"
           element={
-            <PageTransition>
-              <ProjectDetail />
-            </PageTransition>
+            <ProjectDetail />
           }
         />
         <Route
