@@ -94,8 +94,8 @@ const Sidebar = () => {
                     </div>
                 </Link>
 
-                <Link to="/dashboard" className="w-full mt-[10px]">
-                    <div className={`flex items-center gap-5 hover:bg-[#E5E5E5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/dashboard' ? 'bg-[#E5E5E5] text-black' : ''}`}> 
+                <Link to="#" className="w-full mt-[10px]">
+                    <div className={`flex items-center gap-5 hover:bg-[#E5E5E5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '#' ? 'bg-[#E5E5E5] text-black' : ''}`}> 
                         <TbLayoutDashboard className="icon-menu text-[18px]" />
                         <p className="text-menu text-[15px]">Roadmap</p>
                     </div>

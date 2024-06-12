@@ -2,11 +2,44 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { IoArrowBackCircleOutline } from "react-icons/io5";
-import ProjectsData from "./projectsData.jsx";
+import { FaGithubAlt } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
+
+import schoolImage from '../../Assets/project/school.png';
+import githubImage from '../../Assets/skills/github.png';
+
+const projectsData = [
+  {
+    id: 1,
+    title: "Project 1",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut suscipit nam esse at? Ipsam, perferendis.",
+    image: schoolImage,
+    technology: ["React", "Node.js"],
+    github: "https://github.com/user/project1",
+    demo: "https://project1.demo",
+    techImages: [
+      githubImage,
+      githubImage
+    ]
+  },
+  {
+    id: 2,
+    title: "Project 2",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut suscipit nam esse at? Ipsam, perferendis.",
+    image: schoolImage,
+    technology: ["Vue", "Firebase"],
+    github: "https://github.com/user/project2",
+    demo: "https://project2.demo",
+    techImages: [
+      githubImage,
+      githubImage
+    ]
+  }
+];
 
 const ProjectDetail = () => {
   const { id } = useParams();
-  const project = ProjectsData.find((project) => project.id === parseInt(id));
+  const project = projectsData.find((project) => project.id === parseInt(id));
 
   if (!project) return <div>Project not found</div>;
 
@@ -28,18 +61,47 @@ const ProjectDetail = () => {
         </div>
 
         <hr className="max-w-[700px] border-dashed border-black mx-auto my-[20px]" />
-      </div>
 
-      <div className="project-detail">
-        <img src={project.image} alt={project.title} />
-        <div className="links">
-          <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href={project.demo} target="_blank" rel="noopener noreferrer">Demo</a>
+        <div className="flex justify-center">
+          <div className="w-[700px] flex gap-[20px] flex-wrap justify-between items-center">
+            <div className="flex gap-[5px] items-center">
+              <div>
+                <p>Tech Stack:</p>
+              </div>
+              <div className="tech-images flex items-center gap-[5px]">
+                {project.techImages.map((image, index) => (
+                  <img 
+                    className="w-[20px]" 
+                    key={index} 
+                    src={image} 
+                    alt={`tech ${index}`}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className="links flex gap-[10px] text-[14px]">
+              <a href={project.github} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <div className="flex gap-[5px] items-center">
+                  <FaGithubAlt className="text-[16px]" />
+                  <p>Source Code</p>
+                </div>
+              </a>
+              <p>|</p>
+              <a href={project.demo} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                <div className="flex gap-[5px] items-center">
+                  <FiExternalLink className="text-[16px]" />
+                  <p>Live Demo</p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="tech-images">
-          {project.techImages.map((image, index) => (
-            <img key={index} src={image} alt={`tech ${index}`} />
-          ))}
+
+        <div className="flex justify-center mt-[20px]">
+          <img 
+            className="max-w-[700px] w-full"
+            src={project.image}
+          />
         </div>
       </div>
     </>
