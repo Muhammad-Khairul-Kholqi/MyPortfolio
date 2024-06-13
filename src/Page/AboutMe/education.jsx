@@ -20,7 +20,7 @@ const educationData = [
     {
         logo: LogoSmk,
         school: "SMK Wikrama Bogor",
-        duration: "2022 - 2022",
+        duration: "2022 - 2025",
         location: "Bogor, West Java"
     }
 ];

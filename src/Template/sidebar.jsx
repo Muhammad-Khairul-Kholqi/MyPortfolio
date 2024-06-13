@@ -75,56 +75,54 @@ const Sidebar = () => {
 
             <div className="menu-sidebar flex flex-col items-start mt-[20px]">
                 <Link to="/" className="w-full">
-                    <div className={`flex items-center gap-5 hover:bg-[#E5E5E5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/' ? 'bg-[#E5E5E5] text-black' : ''}`}> 
+                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/' ? 'bg-[#F5F5F5] text-black' : ''}`}> 
                         <BiHomeSmile className="icon-menu text-[18px]" />
                         <p className="text-menu text-[15px]">Home</p>
                     </div>
                 </Link>
 
                 <Link to="/aboutme" className="w-full mt-[10px]">
-                    <div className={`flex items-center gap-5 hover:bg-[#E5E5E5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/aboutme' ? 'bg-[#E5E5E5] text-black' : ''}`}> 
+                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/aboutme' ? 'bg-[#F5F5F5] text-black' : ''}`}> 
                         <LuLeaf className="icon-menu text-[18px]" />
                         <p className="text-menu text-[15px]">About</p>
                     </div>
                 </Link>
 
                 <Link to="/dashboard" className="w-full mt-[10px]">
-                    <div className={`flex items-center gap-5 hover:bg-[#E5E5E5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/dashboard' ? 'bg-[#E5E5E5] text-black' : ''}`}> 
+                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/dashboard' ? 'bg-[#F5F5F5] text-black' : ''}`}> 
                         <TbLayoutDashboard className="icon-menu text-[18px]" />
                         <p className="text-menu text-[15px]">Dashboard</p>
                     </div>
                 </Link>
 
                 <Link to="/roadmap" className="w-full mt-[10px]">
-                    <div className={`flex items-center gap-5 hover:bg-[#E5E5E5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/roadmap' ? 'bg-[#E5E5E5] text-black' : ''}`}> 
+                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/roadmap' ? 'bg-[#F5F5F5] text-black' : ''}`}> 
                         <TbRouteSquare className="icon-menu text-[18px]" />
                         <p className="text-menu text-[15px]">Roadmap</p>
                     </div>
                 </Link>
 
                 <Link to="/project" className="w-full mt-[10px]">
-                    <div className={`flex items-center gap-5 hover:bg-[#E5E5E5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/project' ? 'bg-[#E5E5E5] text-black' : ''}`}> 
+                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/project' ? 'bg-[#F5F5F5] text-black' : ''}`}> 
                         <LiaBoxSolid className="icon-menu text-[18px]" />
                         <p className="text-menu text-[15px]">Project</p>
                     </div>
                 </Link>
 
                 <Link to="/blog" className="w-full mt-[10px]">
-                    <div className={`flex items-center gap-5 hover:bg-[#E5E5E5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/blog' ? 'bg-[#E5E5E5] text-black' : ''}`}> 
+                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/blog' ? 'bg-[#F5F5F5] text-black' : ''}`}> 
                         <TbPencilMinus className="icon-menu text-[18px]" />
                         <p className="text-menu text-[15px]">Blogs</p>
                     </div>
                 </Link>
 
                 <Link to="/contact" className="w-full mt-[10px]">
-                    <div className={`flex items-center gap-5 hover:bg-[#E5E5E5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/contact' ? 'bg-[#E5E5E5] text-black' : ''}`}> 
+                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] hover:scale-105 duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/contact' ? 'bg-[#F5F5F5] text-black' : ''}`}> 
                         <IoMdPaperPlane className="icon-menu text-[18px]" />
                         <p className="text-menu text-[15px]">Contact</p>
                     </div>
                 </Link>
             </div>
-                    
-            <hr className="mt-[20px]" />
 
             <Link to="/liked-songs">
                 <div className="button-unduh flex justify-center mt-[20px] border py-[8px] rounded-[10px] hover:scale-105 duration-500">
