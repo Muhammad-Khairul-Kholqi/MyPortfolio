@@ -1,0 +1,17 @@
+/* Add these styles in your CSS file */
+.tab-button {
+    padding: 8px 20px;
+    text-align: center;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button.active {
+    background-color: #404040;
+    color: white;
+}
+
+.tab-button.inactive {
+    background-color: #E5E5E5;
+    color: black;
+}
