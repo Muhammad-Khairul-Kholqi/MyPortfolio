@@ -14,6 +14,7 @@ import Project from './Page/Project/project';
 import ProjectDetail from './Page/Project/projectDetail';
 import Contact from './Page/Contact/contact';
 import Blog from './Page/Blog/blog';
+import BlogDetail from './Page/Blog/blogDetail';
 import Code from './Page/Blog/Code/code';
 import Music from './Page/Music/music';
 import PageTransition from './Utils/pageVariants';
@@ -113,6 +114,12 @@ const AnimatedRoutes = () => {
                 <Blog />
               </PageTransition>
             </DefaultLayout>
+          }
+        />
+        <Route
+          path="/blog/:id"
+          element={
+            <BlogDetail />
           }
         />
         <Route

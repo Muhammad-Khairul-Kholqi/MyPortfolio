@@ -6,7 +6,6 @@ import Js from "../../Assets/skills/js.png"
 import Tailwind from "../../Assets/skills/tailwind.png"
 import React from "../../Assets/skills/react.png"
 import Vue from "../../Assets/skills/vue.png"
-import Footer from "../../Template/footer"
 
 const Frontend = () => {
     const dataRoadmap = [
@@ -92,9 +91,6 @@ const Frontend = () => {
                         </div>
                     </div>
                 ))}
-            </div>
-            <div className="mt-[50px]">
-                <Footer />
             </div>
         </div>
     )

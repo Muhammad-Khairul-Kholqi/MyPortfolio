@@ -1,10 +1,33 @@
-import SearchBlog from "../../Utils/searchBlog";
-import ContentTerbaru from "./contentTerbaru";
-import CardContent from "./Card/cardContent";
-import Footer from "../../Template/footer";
+import React, { useEffect, useState } from 'react';
+import CardBlog from "./cardBlog";
 import Logo from "../../Assets/logo/logo.png";
 
+import schoolImage from '../../Assets/project/school.png';
+
+const BlogData = [
+    {
+        id: 1,
+        title: "orem ipsum dolor sit amet consectetur .",
+        description: "orem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat nihil neque fuga est ex deserunt exercitationem ut repudiandae praesentium.",
+        date: "12 des 2023",
+        image: schoolImage,
+        code: {
+        html: 
+`orem ipsum dolor sit amet consectetur adipisicing`,
+        css: 
+`orem ipsum dolor sit amet consectetur adipisicing`,
+        js: 
+`orem ipsum dolor sit amet consectetur adipisicing`
+        }
+    },
+];
+
 const Blog = () => {
+    const [blogs, setBlog] = useState([]);
+
+    useEffect(() => {
+        setBlog(BlogData);
+    }, []);
     return (
         <div>
             <div>
@@ -17,34 +40,12 @@ const Blog = () => {
                 <p className="text-center text-[14px]">Welcome to my blog! Your Source for Tips and Insights!</p>
 
                 <div>
-                    <CardContent />
+                    {blogs.map((blog) => (
+                        <CardBlog key={blog.id} blog={blog} />
+                    ))}
                 </div>
 
             </div>
-            {/* <div className="pb-[20px]">
-                <p className="font-bold text-[25px]">Blogs</p>
-                <p className="text-[18px]">Share Web Development Tutorials</p>
-            </div>
-
-            <hr className="border-t border-dashed border-gray-500" />
-
-            <div className="flex justify-center flex-wrap gap-[20px] py-[20px] w-full">
-                <div>
-                    <div>
-                        <SearchBlog />
-                    </div>
-                    <div className="mt-[20px] bg-white shadow-md border p-[20px] rounded-[10px]">
-                        <ContentTerbaru />
-                    </div>
-                </div>
-                <div>
-                    <CardContent />
-                </div>
-            </div>
-
-            <div className="mt-[50px]">
-                <Footer />
-            </div> */}
         </div>
     )
 }

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
@@ -45,17 +44,16 @@ const projectsData = [
 
   {
     id: 2,
-    title: "Shop Urban Outfitters",
-    description: "Shop Urban Outfitters is a simple online shop website.",
-    image: OnlineShop,
-    technology: ["CSS", "PHP", "MySQL", "Js"],
-    github: "https://github.com/Muhammad-Khairul-Kholqi/Shop-Urban",
+    title: "Dynamic Box Styler",
+    description: "Dynamic Box Styler is a project created using DOM Js to make it easier to create a box.",
+    image: Box,
+    technology: ["Js", "HTML", "CSS"],
+    github: "https://github.com/Muhammad-Khairul-Kholqi/DynamicBoxStyler",
     demo: "",
     techImages: [
-      Css,
-      Php,
-      Mysql,
-      Js
+      Js,
+      Html,
+      Css
     ]
   },
 
@@ -122,19 +120,21 @@ const projectsData = [
 
   {
     id: 7,
-    title: "Dynamic Box Styler",
-    description: "Dynamic Box Styler is a project created using DOM Js to make it easier to create a box.",
-    image: Box,
-    technology: ["Js", "HTML", "CSS"],
-    github: "https://github.com/Muhammad-Khairul-Kholqi/DynamicBoxStyler",
+    title: "Shop Urban Outfitters",
+    description: "Shop Urban Outfitters is a simple online shop website.",
+    image: OnlineShop,
+    technology: ["CSS", "PHP", "MySQL", "Js"],
+    github: "https://github.com/Muhammad-Khairul-Kholqi/Shop-Urban",
     demo: "",
     techImages: [
-      Js,
-      Html,
-      Css
+      Css,
+      Php,
+      Mysql,
+      Js
     ]
   },
 ];
+
 const ProjectDetail = () => {
   AOS.init();
   const { id } = useParams();

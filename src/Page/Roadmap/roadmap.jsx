@@ -1,4 +1,5 @@
 import Tabs from "./tabs";
+import Footer from "../../Template/footer";
 
 const Roadmap = () => {
     return (
@@ -12,6 +13,10 @@ const Roadmap = () => {
 
             <div>
                 <Tabs />
+            </div>
+
+            <div className="mt-[50px]">
+                <Footer />
             </div>
         </div>
     )
