@@ -35,7 +35,7 @@ const BlogData = [
 </head>
 <body>
     <nav class="navbar">
-        <!-- custom logo sesaui keinginan bisa menggunakan image -->
+        <!-- custom logo sesuai keinginan bisa menggunakan image -->
         <div class="navbar-logo">
             <p>Logo.</p>
         </div>
@@ -295,7 +295,7 @@ const BlogDetail = () => {
 
                         <div>
                             <CopyToClipboard text={codeHtml} onCopy={handleCopy}>
-                                <button className="flex items-center gap-[5px] mb-[10px]">
+                                <button className="flex items-center gap-[5px] mb-[10px] bg-white">
                                     {isCopied ? <IoCheckmarkDoneOutline /> : <IoCopyOutline />}
                                     {isCopied ? 'Copied!' : 'Copy'}
                                 </button>
@@ -318,7 +318,7 @@ const BlogDetail = () => {
 
                         <div>
                             <CopyToClipboard text={codeCss} onCopy={handleCopy}>
-                                <button className="flex items-center gap-[5px] mb-[10px]">
+                                <button className="flex items-center gap-[5px] mb-[10px] bg-white">
                                     {isCopied ? <IoCheckmarkDoneOutline /> : <IoCopyOutline />}
                                     {isCopied ? 'Copied!' : 'Copy'}
                                 </button>
@@ -341,7 +341,7 @@ const BlogDetail = () => {
 
                         <div>
                             <CopyToClipboard text={codeJs} onCopy={handleCopy}>
-                                <button className="flex items-center gap-[5px] mb-[10px]">
+                                <button className="flex items-center gap-[5px] mb-[10px] bg-white">
                                     {isCopied ? <IoCheckmarkDoneOutline /> : <IoCopyOutline />}
                                     {isCopied ? 'Copied!' : 'Copy'}
                                 </button>

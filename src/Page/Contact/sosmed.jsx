@@ -14,76 +14,61 @@ const Sosmed = () => {
                 <div className="flex justify-start items-center flex-wrap gap-[20px] mt-[20px]">
                     <div className="flex flex-wrap items-center justify-center gap-[20px] p-[15px] border border-blue-600 rounded-[10px]">
                         <div>
-                            <p className="text-blue-600 font-bold text-[18px]">Let`s connect</p>
+                            <p className="text-blue-600 font-bold text-[15px]">Let`s connect</p>
                             <a href="https://www.linkedin.com/in/muhammad-khairul-kholqi-b9029b24a/" target="blank">
                                <div className="flex items-center justify-center gap-[5px] mt-[10px] text-white bg-blue-600 hover:bg-blue-700 py-[7px] px-[10px] rounded-[10px]">
-                                    <p className="text-[14px]">Go to Linkedin</p>
+                                    <p className="text-[12px]">Go to Linkedin</p>
                                     <MdOutlineArrowOutward />
                                </div>
                             </a>
                         </div>
-                        <div className="bg-blue-600 p-[15px] rounded-[100%]">
-                            <FaLinkedin className="text-[30px] text-white" />
+                        <div className="bg-blue-600 p-[10px] rounded-[100%]">
+                            <FaLinkedin className="text-[20px] text-white" />
                         </div>
                     </div>
 
                     <div className="flex flex-wrap items-center justify-center gap-[20px] p-[15px] border border-slate-600 rounded-[10px]">
                         <div>
-                            <p className="text-[#1E293B] font-bold text-[18px]">Explore the code</p>
+                            <p className="text-[#1E293B] font-bold text-[15px]">Explore the code</p>
                             <a href="https://github.com/Muhammad-Khairul-Kholqi" target="blank">
                                <div className="flex items-center justify-center gap-[5px] mt-[10px] text-white bg-[#1E293B] hover:bg-slate-700 py-[7px] px-[10px] rounded-[10px]">
-                                    <p className="text-[14px]">Go to Github</p>
+                                    <p className="text-[12px]">Go to Github</p>
                                     <MdOutlineArrowOutward />
                                </div>
                             </a>
                         </div>
-                        <div className="bg-[#1E293B] p-[15px] rounded-[100%]">
-                            <IoLogoGithub className="text-[30px] text-white" />
-                        </div>
-                    </div>
-
-                    <div className="flex flex-wrap items-center justify-center gap-[20px] p-[15px] border border-purple-600 rounded-[10px]">
-                        <div>
-                            <p className="text-purple-600 font-bold text-[18px]">Chat with me</p>
-                            <a href="https://discord.com/channels/@kkyhrl" target="blank">
-                               <div className="flex items-center justify-center gap-[5px] mt-[10px] text-white bg-purple-600 hover:bg-purple-700 py-[7px] px-[10px] rounded-[10px]">
-                                    <p className="text-[14px]">Go to Discord</p>
-                                    <MdOutlineArrowOutward />
-                               </div>
-                            </a>
-                        </div>
-                        <div className="bg-purple-600 p-[15px] rounded-[100%]">
-                            <FaDiscord className="text-[30px] text-white" />
+                        <div className="bg-[#1E293B] p-[10px] rounded-[100%]">
+                            <IoLogoGithub className="text-[20px] text-white" />
                         </div>
                     </div>
 
                     <div className="flex flex-wrap items-center justify-center gap-[20px] p-[15px] border border-red-600 rounded-[10px]">
                         <div>
-                            <p className="text-red-600 font-bold text-[18px]">Follow Me</p>
+                            <p className="text-red-600 font-bold text-[15px]">Follow Me</p>
                              <a href="https://www.instagram.com/kkyhrl/" target="blank">
                                <div className="flex items-center justify-center gap-[5px] mt-[10px] text-white bg-red-600 hover:bg-red-700 py-[7px] px-[10px] rounded-[10px]">
-                                    <p className="text-[14px]">Go to Instagram</p>
+                                    <p className="text-[12px]">Go to Instagram</p>
                                     <MdOutlineArrowOutward />
                                </div>
                             </a>
                         </div>
-                        <div className="bg-red-600 p-[15px] rounded-[100%]">
-                            <FaInstagram className="text-[30px] text-white" />
+                        <div className="bg-red-600 p-[10px] rounded-[100%]">
+                            <FaInstagram className="text-[20px] text-white" />
                         </div>
                     </div>
 
                     <div className="flex flex-wrap items-center justify-center gap-[20px] p-[15px] border border-green-600 rounded-[10px]">
                         <div>
-                            <p className="text-green-600 font-bold text-[18px]">Chat with me</p>
+                            <p className="text-green-600 font-bold text-[15px]">Chat with me</p>
                             <a href="https://wa.me/0895329761084" target="blank">
                                <div className="flex items-center justify-center gap-[5px] mt-[10px] text-white bg-green-600 hover:bg-green-700 py-[7px] px-[10px] rounded-[10px]">
-                                    <p className="text-[14px]">Go to WhatsApp</p>
+                                    <p className="text-[12px]">Go to WhatsApp</p>
                                     <MdOutlineArrowOutward />
                                </div>
                             </a>
                         </div>
-                        <div className="bg-green-600 p-[15px] rounded-[100%]">
-                            <FaWhatsapp className="text-[30px] text-white" />
+                        <div className="bg-green-600 p-[10px] rounded-[100%]">
+                            <FaWhatsapp className="text-[20px] text-white" />
                         </div>
                     </div>
                 </div>
