@@ -88,6 +88,21 @@ const Sidebar = () => {
                     </div>
                 </Link>
 
+                <Link to="/blog" className="w-full mt-[10px]">
+                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/blog' ? 'bg-[#F5F5F5] text-black' : ''}`}>
+                        <TbPencilMinus className="icon-menu text-[18px]" />
+                        <p className="text-menu text-[15px] hover:translate-x-2 duration-500">Blog</p>
+                    </div>
+                </Link>
+
+                <Link to="/project" className="w-full mt-[10px]">
+                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/project' ? 'bg-[#F5F5F5] text-black' : ''}`}>
+                        <LiaBoxSolid className="icon-menu text-[18px]" />
+                        <p className="text-menu text-[15px] hover:translate-x-2 duration-500">Project</p>
+                    </div>
+                </Link>
+
+
                 <Link to="/dashboard" className="w-full mt-[10px]">
                     <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/dashboard' ? 'bg-[#F5F5F5] text-black' : ''}`}>
                         <TbLayoutDashboard className="icon-menu text-[18px]" />
@@ -99,20 +114,6 @@ const Sidebar = () => {
                     <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/roadmap' ? 'bg-[#F5F5F5] text-black' : ''}`}>
                         <TbRouteSquare className="icon-menu text-[18px]" />
                         <p className="text-menu text-[15px] hover:translate-x-2 duration-500">Roadmap</p>
-                    </div>
-                </Link>
-
-                <Link to="/project" className="w-full mt-[10px]">
-                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/project' ? 'bg-[#F5F5F5] text-black' : ''}`}>
-                        <LiaBoxSolid className="icon-menu text-[18px]" />
-                        <p className="text-menu text-[15px] hover:translate-x-2 duration-500">Project</p>
-                    </div>
-                </Link>
-
-                <Link to="/blog" className="w-full mt-[10px]">
-                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/blog' ? 'bg-[#F5F5F5] text-black' : ''}`}>
-                        <TbPencilMinus className="icon-menu text-[18px]" />
-                        <p className="text-menu text-[15px] hover:translate-x-2 duration-500">Blogs</p>
                     </div>
                 </Link>
 

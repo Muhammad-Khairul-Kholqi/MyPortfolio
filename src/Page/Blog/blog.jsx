@@ -2,42 +2,16 @@ import React, { useEffect, useState } from 'react';
 import CardBlog from "./cardBlog";
 import Logo from "../../Assets/logo/logo.png";
 
-import schoolImage from '../../Assets/project/school.png';
+import Navbar from "../../Assets/blog/navbar.png";
 
 const BlogData = [
     {
         id: 1,
-        title: "orem ipsum dolor sit amet consectetur .",
-        description: "orem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat nihil neque fuga est ex deserunt exercitationem ut repudiandae praesentium.",
-        date: "12 des 2023",
-        image: schoolImage,
-        descriptionCode: "orem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat nihil neque fuga est ex deserunt exercitationem ut repudiandae praesentium.",
-        code: {
-        html: 
-`orem ipsum dolor sit amet consectetur adipisicing`,
-        css: 
-`orem ipsum dolor sit amet consectetur adipisicing`,
-        js: 
-`orem ipsum dolor sit amet consectetur adipisicing`
-        }
-    },
-
-    {
-        id: 2,
-        title: "orem ipsum dolor sit amet consectetur .",
-        description: "orem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat nihil neque fuga est ex deserunt exercitationem ut repudiandae praesentium.",
-        date: "12 des 2023",
-        image: schoolImage,
-        descriptionCode: "orem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat nihil neque fuga est ex deserunt exercitationem ut repudiandae praesentium.",
-        code: {
-        html: 
-`orem ipsum dolor sit amet consectetur adipisicing`,
-        css: 
-`orem ipsum dolor sit amet consectetur adipisicing`,
-        js: 
-`orem ipsum dolor sit amet consectetur adipisicing`
-        }
-    },
+        title: "Responsive Navbar using HTML, CSS & JS",
+        description: "Code to create responsive navbar using HTML, CSS and JS.",
+        date: "14 jun 2024",
+        image: Navbar,
+    }
 ];
 
 const Blog = () => {

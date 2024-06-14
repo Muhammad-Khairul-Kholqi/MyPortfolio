@@ -13,6 +13,8 @@ import Chiken from '../../Assets/project/chiken.png';
 import Apotek from '../../Assets/project/apotek.png';
 import Agenda from '../../Assets/project/agenda.png';
 import Box from '../../Assets/project/box-styler.png';
+import Portfolio from '../../Assets/project/portfolio.png';
+import Aksara from '../../Assets/project/aksara.png';
 
 import Css from '../../Assets/skills/css.png';
 import Php from '../../Assets/skills/php.png';
@@ -29,19 +31,17 @@ import Html from '../../Assets/skills/html.png';
 const projectsData = [
   {
     id: 1,
-    title: "Web School",
-    description: "Web School is a website project that I created as a final semester assignment at school.",
-    image: schoolImage,
-    technology: ["CSS", "PHP", "MySQL"],
-    github: "https://github.com/Muhammad-Khairul-Kholqi/WebsiteSchool",
-    demo: "",
+    title: "Web Portfolio",
+    description: "This is my portfolio website.",
+    image: Portfolio,
+    technology: ["React Js", "Tailwind"],
+    github: "https://github.com/Muhammad-Khairul-Kholqi/MyPortfolio",
+    demo: "https://irulsss.vercel.app/",
     techImages: [
-      Css,
-      Php,
-      Mysql
+      ReactJs,
+      Tailwind,
     ]
   },
-
   {
     id: 2,
     title: "Dynamic Box Styler",
@@ -131,6 +131,36 @@ const projectsData = [
       Php,
       Mysql,
       Js
+    ]
+  },
+
+  {
+    id: 8,
+    title: "Web School",
+    description: "Web School is a website project that I created as a final semester assignment at school.",
+    image: schoolImage,
+    technology: ["CSS", "PHP", "MySQL"],
+    github: "https://github.com/Muhammad-Khairul-Kholqi/WebsiteSchool",
+    demo: "",
+    techImages: [
+      Css,
+      Php,
+      Mysql
+    ]
+  },
+
+  {
+    id: 9,
+    title: "Aksara Pelajar",
+    description: "Aksara Pelajar is a website for teachers and students to manage attendance, assignments, and other academic activities",
+    image: Aksara,
+    technology: ["Laravel", "Tailwind", "MySQL"],
+    github: "https://github.com/Muhammad-Khairul-Kholqi/AksaraPelajar",
+    demo: "",
+    techImages: [
+      Laravel,
+      Tailwind,
+      Mysql
     ]
   },
 ];
