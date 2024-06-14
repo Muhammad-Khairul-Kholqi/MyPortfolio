@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const CardBlog = ({blog}) => {
     return (
         <div>
-            <div className="flex justify-center gap-[20px] flex-wrap mt-[20px]">
+            <div>
                 <Link to={`/blog/${blog.id}`}>
                     <div>
                         <div>
@@ -21,7 +21,7 @@ const CardBlog = ({blog}) => {
                         </p>
 
                         <p className="text-[14px] max-w-[390px] w-full capitalize mt-[5px] text-[#525252]">
-                            {blog.description.split(" ").slice(0, 15).join(" ") + "..."}
+                            {blog.description.split(" ").slice(0, 12).join(" ") + "..."}
                         </p>
                     </div>
                 </Link>

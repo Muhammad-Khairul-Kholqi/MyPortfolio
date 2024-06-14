@@ -11,6 +11,24 @@ const BlogData = [
         description: "orem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat nihil neque fuga est ex deserunt exercitationem ut repudiandae praesentium.",
         date: "12 des 2023",
         image: schoolImage,
+        descriptionCode: "orem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat nihil neque fuga est ex deserunt exercitationem ut repudiandae praesentium.",
+        code: {
+        html: 
+`orem ipsum dolor sit amet consectetur adipisicing`,
+        css: 
+`orem ipsum dolor sit amet consectetur adipisicing`,
+        js: 
+`orem ipsum dolor sit amet consectetur adipisicing`
+        }
+    },
+
+    {
+        id: 2,
+        title: "orem ipsum dolor sit amet consectetur .",
+        description: "orem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat nihil neque fuga est ex deserunt exercitationem ut repudiandae praesentium.",
+        date: "12 des 2023",
+        image: schoolImage,
+        descriptionCode: "orem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat nihil neque fuga est ex deserunt exercitationem ut repudiandae praesentium.",
         code: {
         html: 
 `orem ipsum dolor sit amet consectetur adipisicing`,
@@ -39,7 +57,7 @@ const Blog = () => {
                 </div>
                 <p className="text-center text-[14px]">Welcome to my blog! Your Source for Tips and Insights!</p>
 
-                <div>
+                <div className="flex justify-center gap-[20px] flex-wrap mt-[20px]">
                     {blogs.map((blog) => (
                         <CardBlog key={blog.id} blog={blog} />
                     ))}

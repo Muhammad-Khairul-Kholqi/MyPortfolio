@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import AboutMeSingkat from "./Data/aboutMeSingkat";
 import Services from "./Data/services";
 import SoftSkills from "./Data/softSkills";
@@ -6,9 +5,6 @@ import KerjaSama from "./Data/kerjaSama";
 import Footer from "../../Template/footer";
 
 const Home = () => {
-    useEffect(() => {
-        document.title = "Khairul Kholqi | Home Portfolio";
-    }, []);
     return (
         <div>
             <div className="py-[20px]">

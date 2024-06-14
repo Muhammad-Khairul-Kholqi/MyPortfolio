@@ -2,7 +2,7 @@ const Email = () => {
     return (
         <div>
             <div>
-                <p className="font-medium text-[20px]">Or Send Me Email</p>
+                <p className="text-[16px]">Or Send Me Email</p>
             </div>
 
             <div className="mt-[20px]">

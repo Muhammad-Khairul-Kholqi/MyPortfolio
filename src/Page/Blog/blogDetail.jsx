@@ -18,6 +18,24 @@ const BlogData = [
         description: "orem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat nihil neque fuga est ex deserunt exercitationem ut repudiandae praesentium.",
         date: "12 des 2023",
         image: schoolImage,
+        descriptionCode: "orem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat nihil neque fuga est ex deserunt exercitationem ut repudiandae praesentium.",
+        code: {
+        html: 
+`orem ipsum dolor sit amet consectetur adipisicing`,
+        css: 
+`orem ipsum dolor sit amet consectetur adipisicing`,
+        js: 
+`orem ipsum dolor sit amet consectetur adipisicing`
+        }
+    },
+
+    {
+        id: 2,
+        title: "orem ipsum dolor sit amet consectetur .",
+        description: "orem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat nihil neque fuga est ex deserunt exercitationem ut repudiandae praesentium.",
+        date: "12 des 2023",
+        image: schoolImage,
+        descriptionCode: "orem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat nihil neque fuga est ex deserunt exercitationem ut repudiandae praesentium.",
         code: {
         html: 
 `orem ipsum dolor sit amet consectetur adipisicing`,
@@ -92,23 +110,31 @@ const BlogDetail = () => {
                 </div>
 
                 <div className="flex justify-center mt-[10px]">
+                    <p className="text-start max-w-[700px] w-full text-[20px] font-bold mt-[20px]">Explanation:</p>
+                </div>
+
+                <div className="flex justify-center mt-[10px]">
+                    <p className="text-start max-w-[700px] w-full text-[16px]">{blog.descriptionCode}</p>
+                </div>
+
+                <div className="flex justify-center mt-[10px]">
                     <p className="text-start max-w-[700px] w-full text-[20px] font-bold mt-[20px]">Code:</p>
                 </div>
 
                 <div className="flex justify-center mt-[20px]">
-                    <SyntaxHighlighter language="html" style={anOldHope} className="rounded-[10px] max-w-[700px] h-[200px] w-full" showLineNumbers>
+                    <SyntaxHighlighter language="html" style={anOldHope} className="rounded-[10px] max-w-[700px] p-[20px] w-full" showLineNumbers>
                         {codeHtml}
                     </SyntaxHighlighter>
                 </div>
 
                 <div className="flex justify-center mt-[20px]">
-                    <SyntaxHighlighter language="css" style={anOldHope} className="rounded-[10px] max-w-[700px] h-[200px] w-full" showLineNumbers>
+                    <SyntaxHighlighter language="css" style={anOldHope} className="rounded-[10px] max-w-[700px] p-[20px] w-full" showLineNumbers>
                         {codeCss}
                     </SyntaxHighlighter>
                 </div>
 
                 <div className="flex justify-center mt-[20px]">
-                    <SyntaxHighlighter language="js" style={anOldHope} className="rounded-[10px] max-w-[700px] h-[200px] w-full" showLineNumbers>
+                    <SyntaxHighlighter language="javascript" style={anOldHope} className="rounded-[10px] max-w-[700px] p-[20px] w-full" showLineNumbers>
                         {codeJs}
                     </SyntaxHighlighter>
                 </div>

@@ -7,7 +7,7 @@ const Contact = () => {
         <div>
             <div className="pb-[20px]">
                 <p className="font-medium text-[25px]">Contact</p>
-                <p className="text-[18px]">Contact Me</p>
+                <p className="text-[18px]">Let`s get in touch</p>
             </div>
 
             <hr className="border-t border-dashed border-gray-500" />
