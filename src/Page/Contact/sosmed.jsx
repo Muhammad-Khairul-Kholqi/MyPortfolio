@@ -1,7 +1,6 @@
 import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io";
-import { FaWhatsapp } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
@@ -54,21 +53,6 @@ const Sosmed = () => {
                         </div>
                         <div className="bg-red-600 p-[10px] rounded-[100%]">
                             <FaInstagram className="text-[20px] text-white" />
-                        </div>
-                    </div>
-
-                    <div className="flex flex-wrap items-center justify-center gap-[20px] p-[15px] border border-green-600 rounded-[10px]">
-                        <div>
-                            <p className="text-green-600 font-bold text-[15px]">Chat with me</p>
-                            <a href="https://wa.me/0895329761084" target="blank">
-                               <div className="flex items-center justify-center gap-[5px] mt-[10px] text-white bg-green-600 hover:bg-green-700 py-[7px] px-[10px] rounded-[10px]">
-                                    <p className="text-[12px]">Go to WhatsApp</p>
-                                    <MdOutlineArrowOutward />
-                               </div>
-                            </a>
-                        </div>
-                        <div className="bg-green-600 p-[10px] rounded-[100%]">
-                            <FaWhatsapp className="text-[20px] text-white" />
                         </div>
                     </div>
                 </div>

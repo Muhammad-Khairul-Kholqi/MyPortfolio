@@ -266,6 +266,7 @@ const BlogDetail = () => {
 
                 <div className="flex justify-center mt-[20px]">
                     <img 
+                        draggable="false"
                         className="max-w-[700px] w-full shadow border rounded-[10px]"
                         src={blog.image}
                     />

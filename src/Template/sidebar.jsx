@@ -63,12 +63,6 @@ const Sidebar = () => {
                         <FiGithub />
                     </div>
                 </a>
-
-                <a href="https://wa.me/0895329761084" target="blank">
-                    <div className="hover:text-blue-600 icon-sosmed">
-                        <FaWhatsapp />
-                    </div>
-                </a>
             </div>
 
             <hr className="hr-responsive mt-[20px]" />

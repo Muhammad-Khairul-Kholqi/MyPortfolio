@@ -8,6 +8,7 @@ const CardBlog = ({blog}) => {
                     <div>
                         <div>
                             <img
+                                draggable="false"
                                 src={blog.image}
                                 className="max-w-[400px] w-full duration-500 rounded-[10px]"
                             />
