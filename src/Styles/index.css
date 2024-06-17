@@ -18,6 +18,14 @@ body {
     display: none;  
 }
 
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}
+
 @media (max-width: 470px) {
     .sidebar {
         margin-left: -20px;

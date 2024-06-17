@@ -242,7 +242,7 @@ const ProjectDetail = () => {
 
         <div className="flex justify-center mt-[20px]">
           <img 
-            className="max-w-[700px] w-full shadow border"
+            className="max-w-[700px] w-full shadow-lg border rounded-[10px]"
             src={project.image}
           />
         </div>

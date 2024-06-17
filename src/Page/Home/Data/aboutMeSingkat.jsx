@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { HiOutlineDownload } from "react-icons/hi";
-import { TbCoffee } from "react-icons/tb";
 import Typed from 'typed.js';
+import { TbCoffee } from "react-icons/tb";
 import Cv from "../../../Assets/KhairulKholqiCv.pdf";
 import "../../../Styles/styleHome.css";
 import "../../../Styles/index.css";
@@ -31,7 +31,10 @@ const AboutMeSingkat = () => {
                         <p className="text-[25px] font-sora">Hi, I'm Khairul</p>
                         <p className="shake-animation text-[30px] mt-[-5px]">👋</p>
                     </div>
-                    <div>
+                    <div className='has-tooltip cursor-pointer'>
+                        <span className='tooltip mt-[-30px] ml-[-15px] text-[12px] bg-[#E5E5E5] p-[5px] rounded-[5px]'>
+                            Sewaria
+                        </span>
                         <a href="">
                             <TbCoffee className="text-[25px]" />
                         </a>

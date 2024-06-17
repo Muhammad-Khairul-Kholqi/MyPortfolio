@@ -16,7 +16,7 @@ import Contact from './Page/Contact/contact';
 import Blog from './Page/Blog/blog';
 import BlogDetail from './Page/Blog/blogDetail';
 import Music from './Page/Music/music';
-import PageTransition from './Utils/pageVariants';
+// import PageTransition from './Utils/pageVariants';
 
 const DefaultLayout = ({ children }) => {
   return (
@@ -43,9 +43,9 @@ const AnimatedRoutes = () => {
           path="/"
           element={
             <DefaultLayout>
-              <PageTransition>
+              {/* <PageTransition> */}
                 <Home />
-              </PageTransition>
+              {/* </PageTransition> */}
             </DefaultLayout>
           }
         />
@@ -53,9 +53,9 @@ const AnimatedRoutes = () => {
           path="/aboutme"
           element={
             <DefaultLayout>
-              <PageTransition>
+              {/* <PageTransition> */}
                 <AboutMe />
-              </PageTransition>
+              {/* </PageTransition> */}
             </DefaultLayout>
           }
         />
@@ -63,9 +63,9 @@ const AnimatedRoutes = () => {
           path="/dashboard"
           element={
             <DefaultLayout>
-              <PageTransition>
+              {/* <PageTransition> */}
                 <Dashboard />
-              </PageTransition>
+              {/* </PageTransition> */}
             </DefaultLayout>
           }
         />
@@ -73,9 +73,9 @@ const AnimatedRoutes = () => {
           path="/roadmap"
           element={
             <DefaultLayout>
-              <PageTransition>
+              {/* <PageTransition> */}
                 <Roadmap />
-              </PageTransition>
+              {/* </PageTransition> */}
             </DefaultLayout>
           }
         />
@@ -83,9 +83,9 @@ const AnimatedRoutes = () => {
           path="/project"
           element={
             <DefaultLayout>
-              <PageTransition>
+              {/* <PageTransition> */}
                 <Project />
-              </PageTransition>
+              {/* </PageTransition> */}
             </DefaultLayout>
           }
         />
@@ -99,9 +99,9 @@ const AnimatedRoutes = () => {
           path="/contact"
           element={
             <DefaultLayout>
-              <PageTransition>
+              {/* <PageTransition> */}
                 <Contact />
-              </PageTransition>
+              {/* </PageTransition> */}
             </DefaultLayout>
           }
         />
@@ -109,9 +109,9 @@ const AnimatedRoutes = () => {
           path="/blog"
           element={
             <DefaultLayout>
-              <PageTransition>
+              {/* <PageTransition> */}
                 <Blog />
-              </PageTransition>
+              {/* </PageTransition> */}
             </DefaultLayout>
           }
         />
@@ -125,9 +125,9 @@ const AnimatedRoutes = () => {
           path="/liked-songs"
           element={
             <DefaultLayout>
-              <PageTransition>
+              {/* <PageTransition> */}
                 <Music />
-              </PageTransition>
+              {/* </PageTransition> */}
             </DefaultLayout>
           }
         />
