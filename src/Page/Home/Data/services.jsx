@@ -1,6 +1,5 @@
 import { MdMiscellaneousServices } from "react-icons/md";
 import { FiMonitor } from "react-icons/fi";
-import { RiSeoLine } from "react-icons/ri";
 import { LuPencilRuler } from "react-icons/lu";
 
 const Services = () => {
@@ -11,12 +10,6 @@ const Services = () => {
             title: "Website Development",
             hashtags: ["#coding"],
             description: "Create stunning, easy-to-use frontend web applications using modern technologies."
-        },
-        {
-            icon: <RiSeoLine />,
-            title: "Search Engine Optimization",
-            hashtags: ["#marketing"],
-            description: "Improvement Search Engine Optimization and web performance."
         },
         {
             icon: <LuPencilRuler />,
