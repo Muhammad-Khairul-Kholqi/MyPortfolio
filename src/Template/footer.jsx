@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="flex gap-[20px] justify-center flex-wrap">
         <Link to="/aboutme">
           <div className="hover:text-blue-600">
-            <p>About Me</p>
+            <p>About</p>
           </div>
         </Link>
 
@@ -30,7 +30,7 @@ const Footer = () => {
 
         <Link to="/blog">
           <div className="hover:text-blue-600">
-            <p>Blogs</p>
+            <p>Blog</p>
           </div>
         </Link>
       </div>
@@ -38,17 +38,14 @@ const Footer = () => {
       <div className="mt-[20px]">
         <p className="font-bold">Contact Me</p>
         <div className="mt-[10px] flex gap-[20px] justify-center flex-wrap">
-            <a href="" className="hover:text-blue-600">
+            <a href="https://www.linkedin.com/in/muhammad-khairul-kholqi-b9029b24a/" target="blank" className="hover:text-blue-600">
               <FaLinkedinIn />
             </a>
-            <a href="" className="hover:text-blue-600">
+            <a href="https://www.instagram.com/kkyhrl/" target="blank" className="hover:text-blue-600">
               <FaInstagram />
             </a>
-            <a href="" className="hover:text-blue-600">
+            <a href="https://github.com/Muhammad-Khairul-Kholqi" target="blank" className="hover:text-blue-600">
               <FiGithub />
-            </a>
-            <a href="" className="hover:text-blue-600">
-              <FaWhatsapp />
             </a>
         </div>
       </div>
