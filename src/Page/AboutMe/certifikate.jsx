@@ -13,60 +13,70 @@ import Serfikitat5 from "../../Assets/sertifikat/sertifikat5.png";
 import Serfikitat6 from "../../Assets/sertifikat/sertifikat6.png";
 import Serfikitat7 from "../../Assets/sertifikat/sertifikat7.png";
 import Serfikitat8 from "../../Assets/sertifikat/sertifikat8.png";
+import Serfikitat9 from "../../Assets/sertifikat/sertifikat9.jpg";
 
 const Certifikate = () => {
   const [images] = useState([
     { 
-        src: Serfikitat1, title: 'Wanteknologi', 
+        src: Serfikitat9, 
+        title: 'PT. Catur Sangkara Teknologi', 
+        tema: 'Internship', 
+        waktu: '22 January 2024 - 21 June 2024',
+        deskripsi: 'I received this certificate after completing a 6-month internship at PT. Catur Sangkara Teknologi, where my job was as a frontend developer.'
+    },
+    { 
+        src: Serfikitat1, 
+        title: 'Wanteknologi', 
         tema: 'Front-end Development with The Progressive JavaScript Framework Vue.JS ', 
         waktu: '30 October - 03 November 2023',
         deskripsi: 'I received this certificate after completing a Vue JS learning program with Wanteknologi Company.'
     },
     { 
-        src: Serfikitat2, title: 'Cyberlabs', 
+        src: Serfikitat2, 
+        title: 'Cyberlabs', 
         tema: 'Backend Development With JavaScript Framework', 
         waktu: '10 November 2023',
         deskripsi: 'I received this certificate after completing a backend development course using Node.js and Express.js from Cyberlabs.'
     },
     { 
-        src: Serfikitat3, title: 'Dicoding', 
+        src: Serfikitat3, 
+        title: 'Dicoding', 
         tema: 'Belajar Dasar Pemrograman Web', 
         waktu: '22 September 2023',
         deskripsi: 'I received this certificate after completing a basic web programming course from the renowned platform Dicoding.'
     },
     { 
-        src: Serfikitat4, title: 'Creative Station', 
+        src: Serfikitat4, 
+        title: 'Creative Station', 
         tema: 'Menguasai Mikrokontroller dan Pemrograman Dasar dengan Arduino', 
-        waktu: '28 Agustus 2022',
+        waktu: '28 August 2022',
         deskripsi: 'I received this certificate after completing a course on Arduino via Zoom with an expert in the field, organized by Creative Station.'
     },
     { 
-        src: Serfikitat5, title: 'Dunia Coding', 
+        src: Serfikitat5, 
+        title: 'Dunia Coding', 
         tema: 'Membuat Aplikasi To Do List dengan Laravel', 
         waktu: '-',
         deskripsi: 'I received this certificate after completing a course on developing applications using the Laravel framework, organized by Dunia Coding.'
     },
     { 
-        src: Serfikitat6, title: 'Kemendikbud', 
+        src: Serfikitat6, 
+        title: 'Kemendikbud', 
         tema: 'Uji Kemahiran Berbahasa Indonesia', 
         waktu: '29 September 2023',
         deskripsi: 'In spite of not obtaining this certificate from programming studies, I am proud to have received it, and its value is quite satisfying to me.'
     },
-
-
-
-
-
-
     { 
-        src: Serfikitat7, title: 'Dunia Coding', 
+        src: Serfikitat7, 
+        title: 'Dunia Coding', 
         tema: 'Tutorial Data Tables Server Side dengan Laravel', 
         waktu: '-',
         deskripsi: 'I received this certificate after completing a course on Data Tables Server Side with Laravel, organized by Dunia Coding.'
     },
 
     { 
-        src: Serfikitat8, title: 'Dunia Coding', 
+        src: Serfikitat8, 
+        title: 'Dunia Coding', 
         tema: 'Belajar Pemrograman Dasar C++', 
         waktu: '-',
         deskripsi: 'I received this certificate upon completing a C++ learning program by Dunia Coding.'
@@ -104,7 +114,7 @@ const Certifikate = () => {
           <div className="w-[400px]">
             <img 
                 src={images[currentImageIndex].src}
-                className="w-full shadw"
+                className="w-full shadow-md border"
             />
 
             <div className="flex justify-end mt-4 gap-[10px]">
