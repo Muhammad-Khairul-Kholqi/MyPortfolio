@@ -26,7 +26,7 @@ const JobDeskPopup = ({ jobDesk, onClose }) => (
         <div className="bg-white p-5 rounded-md max-w-lg w-full">
             <div className="flex gap-[10px] flex-wrap justify-between">
                 <h2 className="text-xl font-semibold">Job Desk</h2>
-                <button onClick={onClose}><IoClose className="text-[20px]" /></button>
+                <button onClick={onClose} className="bg-white"><IoClose className="text-[20px]" /></button>
             </div>
             <ul className="list-disc list-inside mt-[20px]">
                 {jobDesk.map((task, index) => (
@@ -94,7 +94,7 @@ const Career = () => {
                                     <div className="mt-[10px]">
                                         <button 
                                             onClick={() => handleSeeJobDesk(career.jobDesk)} 
-                                            className="border p-[5px] text-[12px] hover:shadow duration-300"
+                                            className="border p-[5px] text-[12px] hover:shadow duration-300 bg-white"
                                         >
                                             See Jobdesk
                                         </button>
