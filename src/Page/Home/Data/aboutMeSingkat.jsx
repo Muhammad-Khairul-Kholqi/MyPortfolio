@@ -35,7 +35,7 @@ const AboutMeSingkat = () => {
                         <span className='tooltip mt-[-30px] ml-[-15px] text-[12px] bg-[#E5E5E5] p-[5px] rounded-[5px]'>
                             Sewaria
                         </span>
-                        <a href="">
+                        <a href="https://saweria.co/khrlkholqi" target="blank">
                             <TbCoffee className="text-[25px]" />
                         </a>
                     </div>
