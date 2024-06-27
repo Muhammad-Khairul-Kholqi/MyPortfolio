@@ -36,7 +36,7 @@ const AboutMeSingkat = () => {
                             Sewaria
                         </span>
                         <a href="https://saweria.co/khrlkholqi" target="blank">
-                            <TbCoffee className="text-[25px]" />
+                            <TbCoffee className="text-[25px] hover:skew-y-6" />
                         </a>
                     </div>
                 </div>
