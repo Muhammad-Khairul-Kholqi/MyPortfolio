@@ -94,7 +94,7 @@ const Career = () => {
                                     <div className="mt-[10px]">
                                         <button 
                                             onClick={() => handleSeeJobDesk(career.jobDesk)} 
-                                            className="border p-[5px] text-[12px] hover:shadow duration-300 bg-white"
+                                            className="border rounded-[5px] p-[5px] text-[12px] hover:shadow-md duration-300 bg-white"
                                         >
                                             See Jobdesk
                                         </button>
