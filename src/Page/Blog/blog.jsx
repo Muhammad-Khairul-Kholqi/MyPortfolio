@@ -12,14 +12,6 @@ const BlogData = [
         date: "14 jun 2024",
         image: Navbar,
     },
-
-    {
-        slug: 'hahah-ahahahknaih',
-        title: "hahah ahahahknaih ",
-        description: "avafvaa oiajoiaouh oiavoahuhagafa.",
-        date: "14 jun 3434",
-        image: Navbar,
-    }
 ];
 
 const Blog = () => {
