@@ -81,7 +81,7 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/project/:id"
+          path="/project/:slug" 
           element={
             <ProjectDetail />
           }
@@ -103,7 +103,7 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
-          path="/blog/:id"
+          path="/blog/:slug"
           element={
             <BlogDetail />
           }

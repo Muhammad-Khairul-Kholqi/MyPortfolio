@@ -8,12 +8,13 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { anOldHope } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import {IoCopyOutline, IoCheckmarkDoneOutline} from 'react-icons/io5';
+import NotFound from "../../Template/notFound";
 
 import Navbar from "../../Assets/blog/navbar.png";
 
 const BlogData = [
     {
-        id: 1,
+        slug: 'responsive-navbar-using-html-css-js',
         title: "Responsive Navbar using HTML, CSS & JS",
         description: "Code to create responsive navbar using HTML, CSS and JS.",
         date: "14 jun 2024",
@@ -223,10 +224,11 @@ const BlogDetail = () => {
         setTimeout(() => setIsCopied(false), 2000);
     };
 
-    const { id } = useParams();
-    const blog = BlogData.find((blog) => blog.id === parseInt(id));
+    const { slug } = useParams();
+    const blog = BlogData.find((blog) => blog.slug === slug);
 
-    if (!blog) return <div>Blog not found</div>;
+
+    if (!blog) return <NotFound />;
 
     const codeHtml = BlogData[0].code.html;
     const codeCss = BlogData[0].code.css;

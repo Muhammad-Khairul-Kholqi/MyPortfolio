@@ -4,7 +4,7 @@ const CardBlog = ({blog}) => {
     return (
         <div>
             <div>
-                <Link to={`/blog/${blog.id}`}>
+                <Link to={`/blog/${blog.slug}`}>
                     <div>
                         <div>
                             <img

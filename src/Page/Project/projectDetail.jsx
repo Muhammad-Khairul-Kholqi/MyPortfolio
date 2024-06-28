@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { FaGithubAlt } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
+import NotFound from '../../Template/notFound';
 
 import schoolImage from '../../Assets/project/school.png';
 import GcTools from '../../Assets/project/gc.png';
@@ -26,7 +27,7 @@ import Html from '../../Assets/skills/html.png';
 
 const projectsData = [
   {
-    id: 1,
+    slug: 'web-portfolio',
     title: "Web Portfolio",
     description: "This is my portfolio website.",
     image: Portfolio,
@@ -39,7 +40,7 @@ const projectsData = [
     ]
   },
   {
-    id: 2,
+    slug: 'dynamic-box-styler',
     title: "Dynamic Box Styler",
     description: "Dynamic Box Styler is a project created using DOM Js to make it easier to create a box.",
     image: Box,
@@ -54,7 +55,7 @@ const projectsData = [
   },
 
   {
-    id: 3,
+    slug: 'gc-tools',
     title: "GC Tools",
     description: "GC Tools is a website designed to make it easier for the frontend to develop its website.",
     image: GcTools,
@@ -70,7 +71,7 @@ const projectsData = [
   },
 
   {
-    id: 4,
+    slug: 'apotek-aplication',
     title: "Apotek App",
     description: "Aptek App is a medication management website that I created when learning Laravel.",
     image: Apotek,
@@ -85,7 +86,7 @@ const projectsData = [
   },
 
   {
-    id: 5,
+    slug: 'daily-agenda',
     title: "Daily Agenda",
     description: "Daily Agenda is a daily agenda website created to organize schedules so that they are organized.",
     image: Agenda,
@@ -100,7 +101,7 @@ const projectsData = [
   },
 
   {
-    id: 6,
+    slug: 'school-website',
     title: "Web School",
     description: "Web School is a website project that I created as a final semester assignment at school.",
     image: schoolImage,
@@ -117,10 +118,10 @@ const projectsData = [
 
 const ProjectDetail = () => {
   AOS.init();
-  const { id } = useParams();
-  const project = projectsData.find((project) => project.id === parseInt(id));
+  const { slug } = useParams(); 
+  const project = projectsData.find((project) => project.slug === slug);
 
-  if (!project) return <div>Project not found</div>;
+  if (!project) return <NotFound />;
 
   return (
     <>

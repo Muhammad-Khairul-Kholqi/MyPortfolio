@@ -6,10 +6,18 @@ import Navbar from "../../Assets/blog/navbar.png";
 
 const BlogData = [
     {
-        id: 1,
+        slug: 'responsive-navbar-using-html-css-js',
         title: "Responsive Navbar using HTML, CSS & JS",
         description: "Code to create responsive navbar using HTML, CSS and JS.",
         date: "14 jun 2024",
+        image: Navbar,
+    },
+
+    {
+        slug: 'hahah-ahahahknaih',
+        title: "hahah ahahahknaih ",
+        description: "avafvaa oiajoiaouh oiavoahuhagafa.",
+        date: "14 jun 3434",
         image: Navbar,
     }
 ];
@@ -33,7 +41,7 @@ const Blog = () => {
 
                 <div className="flex justify-center gap-[20px] flex-wrap mt-[20px]">
                     {blogs.map((blog) => (
-                        <CardBlog key={blog.id} blog={blog} />
+                        <CardBlog key={blog.slug} blog={blog} />
                     ))}
                 </div>
 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const CardProject = ({ project }) => {
   return (
     <div className="mt-[40px] px-[20px]">
-      <Link to={`/project/${project.id}`}>
+      <Link to={`/project/${project.slug}`}>
         <div className="border rounded-[10px] hover:scale-105 duration-500 hover:shadow text-[#404040]">
           <div className="border-b">
             <img
