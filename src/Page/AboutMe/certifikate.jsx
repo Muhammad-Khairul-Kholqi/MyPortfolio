@@ -114,7 +114,7 @@ const Certifikate = () => {
           <div className="w-[400px]">
             <img 
                 src={images[currentImageIndex].src}
-                className="w-full shadow-md border"
+                className="w-full shadow-md rounded-[10px]"
             />
 
             <div className="flex justify-end mt-4 gap-[10px]">

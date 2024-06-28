@@ -7,14 +7,11 @@ import { FaGithubAlt } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
 import schoolImage from '../../Assets/project/school.png';
-import OnlineShop from '../../Assets/project/shop.png';
 import GcTools from '../../Assets/project/gc.png';
-import Chiken from '../../Assets/project/chiken.png';
 import Apotek from '../../Assets/project/apotek.png';
 import Agenda from '../../Assets/project/agenda.png';
 import Box from '../../Assets/project/box-styler.png';
 import Portfolio from '../../Assets/project/portfolio.png';
-import Aksara from '../../Assets/project/aksara.png';
 
 import Css from '../../Assets/skills/css.png';
 import Php from '../../Assets/skills/php.png';
@@ -23,7 +20,6 @@ import Js from '../../Assets/skills/js.png';
 import Tailwind from '../../Assets/skills/tailwind.png';
 import ReactJs from '../../Assets/skills/react.png';
 import Express from '../../Assets/skills/express.png';
-import Vue from '../../Assets/skills/vue.png';
 import Laravel from '../../Assets/skills/laravel.png';
 import Bootstrap from '../../Assets/skills/bootstrap.png';
 import Html from '../../Assets/skills/html.png';
@@ -75,21 +71,6 @@ const projectsData = [
 
   {
     id: 4,
-    title: "Waroeng Sawaregna",
-    description: "Waroeng Sawargena is an online food website that I created when learning Vue JS.",
-    image: Chiken,
-    technology: ["Vue Js", "Css", "Laravel"],
-    github: "https://github.com/Muhammad-Khairul-Kholqi/WaroengSawaregnaVue",
-    demo: "",
-    techImages: [
-      Vue,
-      Css,
-      Laravel
-    ]
-  },
-
-  {
-    id: 5,
     title: "Apotek App",
     description: "Aptek App is a medication management website that I created when learning Laravel.",
     image: Apotek,
@@ -104,7 +85,7 @@ const projectsData = [
   },
 
   {
-    id: 6,
+    id: 5,
     title: "Daily Agenda",
     description: "Daily Agenda is a daily agenda website created to organize schedules so that they are organized.",
     image: Agenda,
@@ -119,23 +100,7 @@ const projectsData = [
   },
 
   {
-    id: 7,
-    title: "Shop Urban Outfitters",
-    description: "Shop Urban Outfitters is a simple online shop website.",
-    image: OnlineShop,
-    technology: ["CSS", "PHP", "MySQL", "Js"],
-    github: "https://github.com/Muhammad-Khairul-Kholqi/Shop-Urban",
-    demo: "",
-    techImages: [
-      Css,
-      Php,
-      Mysql,
-      Js
-    ]
-  },
-
-  {
-    id: 8,
+    id: 6,
     title: "Web School",
     description: "Web School is a website project that I created as a final semester assignment at school.",
     image: schoolImage,
@@ -145,21 +110,6 @@ const projectsData = [
     techImages: [
       Css,
       Php,
-      Mysql
-    ]
-  },
-
-  {
-    id: 9,
-    title: "Aksara Pelajar",
-    description: "Aksara Pelajar is a website for teachers and students to manage attendance, assignments, and other academic activities",
-    image: Aksara,
-    technology: ["Laravel", "Tailwind", "MySQL"],
-    github: "https://github.com/Muhammad-Khairul-Kholqi/AksaraPelajar",
-    demo: "",
-    techImages: [
-      Laravel,
-      Tailwind,
       Mysql
     ]
   },
