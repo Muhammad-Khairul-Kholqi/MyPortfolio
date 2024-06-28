@@ -12,6 +12,7 @@ import Laravel from "../../Assets/skills/laravel.png";
 import Mysql from "../../Assets/skills/mysql.png";
 import Express from "../../Assets/skills/express.png";
 import Github from "../../Assets/skills/github.png";
+import Alpine from "../../Assets/skills/alpine.png";
 import "../../Styles/styleSkill.css";
 
 
@@ -39,6 +40,10 @@ const Skill = () => {
                             <div className="marquee__item flex items-center gap-[5px] border py-[10px] px-[20px] rounded-[50px]">
                                 <img src={Tailwind} alt="" />
                                 <p>Tailwind</p>
+                            </div>
+                            <div className="marquee__item flex items-center gap-[5px] border py-[10px] px-[20px] rounded-[50px]">
+                                <img src={Alpine} alt="" />
+                                <p>Alpine Js</p>
                             </div>
                             <div className="marquee__item flex items-center gap-[5px] border py-[10px] px-[20px] rounded-[50px]">
                                 <img src={Bootstrap} alt="" />
@@ -70,6 +75,10 @@ const Skill = () => {
                             <div className="marquee__item flex items-center gap-[5px] border py-[10px] px-[20px] rounded-[50px]">
                                 <img src={Laravel} alt="" />
                                 <p>Laravel</p>
+                            </div>
+                            <div className="marquee__item flex items-center gap-[5px] border py-[10px] px-[20px] rounded-[50px]">
+                                <img src={Alpine} alt="" />
+                                <p>Alpine Js</p>
                             </div>
                             <div className="marquee__item flex items-center gap-[5px] border py-[10px] px-[20px] rounded-[50px]">
                                 <img src={Express} alt="" />

@@ -21,7 +21,7 @@ const StaticLanguage = () => {
         const totalRepos = repos.length;
         const popularLanguages = Array.from(langMap.entries()).map(([lang, count]) => ({
           language: lang,
-          percentage: Math.round((count / totalRepos) * 100) // Bulatkan nilai persentase
+          percentage: Math.round((count / totalRepos) * 100)
         }));
         setLanguages(popularLanguages);
       } catch (error) {
