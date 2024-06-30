@@ -45,23 +45,23 @@ const Sidebar = () => {
                 </div>
             </div>
 
-            <div className="mt-[20px] flex gap-[20px] justify-center flex-wrap">
+            <div className="sosmed mt-[20px] flex gap-[20px] justify-center flex-wrap">
                 <div className="relative">
-                    <a href="https://www.linkedin.com/in/muhammad-khairul-kholqi-b9029b24a/" target="blank" className="peer hover:text-blue-600">
+                    <a href="https://www.linkedin.com/in/muhammad-khairul-kholqi-b9029b24a/" target="blank" className="icon-sosmed peer hover:text-blue-600">
                         <FaLinkedinIn />
                     </a>
                     <div id="tooltipExample" className="absolute bg-[#E5E5E5] -top-9 left-1/2 -translate-x-1/2 z-10 whitespace-nowrap rounded px-2 py-1 text-center text-sm opacity-0 transition-all ease-out peer-hover:opacity-100 peer-focus:opacity-100" role="tooltip">Linkedin</div>
                 </div>
 
                 <div className="relative">
-                    <a href="https://www.instagram.com/kkyhrl/" target="blank" className="peer hover:text-blue-600">
+                    <a href="https://www.instagram.com/kkyhrl/" target="blank" className="icon-sosmed peer hover:text-blue-600">
                         <FaInstagram />
                     </a>
                     <div id="tooltipExample" className="absolute bg-[#E5E5E5] -top-9 left-1/2 -translate-x-1/2 z-10 whitespace-nowrap rounded px-2 py-1 text-center text-sm opacity-0 transition-all ease-out peer-hover:opacity-100 peer-focus:opacity-100" role="tooltip">Instagram</div>
                 </div>
 
                 <div className="relative">
-                    <a href="https://github.com/Muhammad-Khairul-Kholqi" target="blank" className="peer hover:text-blue-600">
+                    <a href="https://github.com/Muhammad-Khairul-Kholqi" target="blank" className="icon-sosmed peer hover:text-blue-600">
                         <FiGithub />
                     </a>
                     <div id="tooltipExample" className="absolute bg-[#E5E5E5] -top-9 left-1/2 -translate-x-1/2 z-10 whitespace-nowrap rounded px-2 py-1 text-center text-sm opacity-0 transition-all ease-out peer-hover:opacity-100 peer-focus:opacity-100" role="tooltip">Github</div>
