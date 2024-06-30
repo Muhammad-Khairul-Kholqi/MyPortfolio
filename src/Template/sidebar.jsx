@@ -17,6 +17,64 @@ import { TbLayoutDashboard } from "react-icons/tb";
 const Sidebar = () => {
     const location = useLocation();
 
+    const LinkSosmed = [
+        {
+            link: "https://www.linkedin.com/in/muhammad-khairul-kholqi-b9029b24a/",
+            icon: <FaLinkedinIn />,
+            textTooltip: "Linkedin"
+        },
+
+        {
+            link: "https://www.instagram.com/kkyhrl/",
+            icon: <FaInstagram />,
+            textTooltip: "Instagram"
+        },
+
+        {
+            link: "https://github.com/Muhammad-Khairul-Kholqi/",
+            icon: <FiGithub />,
+            textTooltip: "Github"
+        },
+    ]
+
+    const MenuSidebar = [
+        {
+            path: "/",
+            icon: <BiHomeSmile />,
+            textIcon: "Home"
+        },
+
+        {
+            path: "/aboutme",
+            icon: <LuLeaf />,
+            textIcon: "About"
+        },
+
+        {
+            path: "/blog",
+            icon: <TbPencilMinus />,
+            textIcon: "Blog"
+        },
+
+        {
+            path: "/project",
+            icon: <LiaBoxSolid />,
+            textIcon: "Project"
+        },
+
+        {
+            path: "/dashboard",
+            icon: <TbLayoutDashboard />,
+            textIcon: "Dashboard"
+        },
+
+        {
+            path: "/contact",
+            icon: <IoMdPaperPlane />,
+            textIcon: "Contact"
+        },
+    ]
+
     return (
         <div className="container-sidebar p-[20px] w-[270px] h-screen">
             <div
@@ -46,80 +104,29 @@ const Sidebar = () => {
             </div>
 
             <div className="sosmed mt-[20px] flex gap-[20px] justify-center flex-wrap">
-                <div className="relative">
-                    <a href="https://www.linkedin.com/in/muhammad-khairul-kholqi-b9029b24a/" target="blank" className="icon-sosmed peer hover:text-blue-600">
-                        <FaLinkedinIn />
-                    </a>
-                    <div id="tooltipExample" className="absolute bg-[#E5E5E5] -top-9 left-1/2 -translate-x-1/2 z-10 whitespace-nowrap rounded px-2 py-1 text-center text-sm opacity-0 transition-all ease-out peer-hover:opacity-100 peer-focus:opacity-100" role="tooltip">Linkedin</div>
-                </div>
-
-                <div className="relative">
-                    <a href="https://www.instagram.com/kkyhrl/" target="blank" className="icon-sosmed peer hover:text-blue-600">
-                        <FaInstagram />
-                    </a>
-                    <div id="tooltipExample" className="absolute bg-[#E5E5E5] -top-9 left-1/2 -translate-x-1/2 z-10 whitespace-nowrap rounded px-2 py-1 text-center text-sm opacity-0 transition-all ease-out peer-hover:opacity-100 peer-focus:opacity-100" role="tooltip">Instagram</div>
-                </div>
-
-                <div className="relative">
-                    <a href="https://github.com/Muhammad-Khairul-Kholqi" target="blank" className="icon-sosmed peer hover:text-blue-600">
-                        <FiGithub />
-                    </a>
-                    <div id="tooltipExample" className="absolute bg-[#E5E5E5] -top-9 left-1/2 -translate-x-1/2 z-10 whitespace-nowrap rounded px-2 py-1 text-center text-sm opacity-0 transition-all ease-out peer-hover:opacity-100 peer-focus:opacity-100" role="tooltip">Github</div>
-                </div>
+                {LinkSosmed.map((sosmed, index) => (
+                    <div key={index} className="relative">
+                        <a href={sosmed.link} target="blank" className="icon-sosmed peer hover:text-blue-600">
+                            {sosmed.icon}
+                        </a>
+                        <div id="tooltipExample" className="absolute bg-[#E5E5E5] -top-9 left-1/2 -translate-x-1/2 z-10 whitespace-nowrap rounded px-2 py-1 text-center text-sm opacity-0 transition-all ease-out peer-hover:opacity-100 peer-focus:opacity-100" role="tooltip">{sosmed.textTooltip}</div>
+                    </div>
+                ))}
             </div>
 
             <hr className="hr-responsive mt-[20px]" />
 
             <div className="menu-sidebar flex flex-col items-start mt-[20px]">
-                <Link to="/" className="w-full">
-                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/' ? 'bg-[#F5F5F5] text-black' : ''}`}>
-                        <BiHomeSmile className="icon-menu text-[18px]" />
-                        <p className="text-menu text-[15px] hover:translate-x-2 duration-500">Home</p>
-                    </div>
-                </Link>
-
-                <Link to="/aboutme" className="w-full mt-[10px]">
-                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/aboutme' ? 'bg-[#F5F5F5] text-black' : ''}`}>
-                        <LuLeaf className="icon-menu text-[18px]" />
-                        <p className="text-menu text-[15px] hover:translate-x-2 duration-500">About</p>
-                    </div>
-                </Link>
-
-                <Link to="/blog" className="w-full mt-[10px]">
-                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/blog' ? 'bg-[#F5F5F5] text-black' : ''}`}>
-                        <TbPencilMinus className="icon-menu text-[18px]" />
-                        <p className="text-menu text-[15px] hover:translate-x-2 duration-500">Blog</p>
-                    </div>
-                </Link>
-
-                <Link to="/project" className="w-full mt-[10px]">
-                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/project' ? 'bg-[#F5F5F5] text-black' : ''}`}>
-                        <LiaBoxSolid className="icon-menu text-[18px]" />
-                        <p className="text-menu text-[15px] hover:translate-x-2 duration-500">Project</p>
-                    </div>
-                </Link>
-
-
-                <Link to="/dashboard" className="w-full mt-[10px]">
-                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/dashboard' ? 'bg-[#F5F5F5] text-black' : ''}`}>
-                        <TbLayoutDashboard className="icon-menu text-[18px]" />
-                        <p className="text-menu text-[15px] hover:translate-x-2 duration-500">Dashboard</p>
-                    </div>
-                </Link>
-
-                <Link to="/roadmap" className="w-full mt-[10px]">
-                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/roadmap' ? 'bg-[#F5F5F5] text-black' : ''}`}>
-                        <TbRouteSquare className="icon-menu text-[18px]" />
-                        <p className="text-menu text-[15px] hover:translate-x-2 duration-500">Roadmap</p>
-                    </div>
-                </Link>
-
-                <Link to="/contact" className="w-full mt-[10px]">
-                    <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === '/contact' ? 'bg-[#F5F5F5] text-black' : ''}`}>
-                        <IoMdPaperPlane className="icon-menu text-[18px]" />
-                        <p className="text-menu text-[15px] hover:translate-x-2 duration-500">Contact</p>
-                    </div>
-                </Link>
+                {MenuSidebar.map((menu, index) => (
+                    <Link key={index} to={menu.path} className="w-full mt-[10px]">
+                        <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === `${menu.path}` ? 'bg-[#F5F5F5] text-black' : ''}`}>
+                            <div  className="icon-menu text-[18px]">
+                                {menu.icon}
+                            </div>
+                            <p className="text-menu text-[15px] hover:translate-x-2 duration-500">{menu.textIcon}</p>
+                        </div>
+                    </Link>
+                ))}
             </div>
 
             <Link to="/liked-songs">

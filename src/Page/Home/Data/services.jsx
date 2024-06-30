@@ -3,7 +3,6 @@ import { FiMonitor } from "react-icons/fi";
 import { LuPencilRuler } from "react-icons/lu";
 
 const Services = () => {
-    // Daftar layanan
     const services = [
         {
             icon: <FiMonitor />,
