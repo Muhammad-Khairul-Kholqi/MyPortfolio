@@ -16,6 +16,7 @@ import { TbLayoutDashboard } from "react-icons/tb";
 
 const Sidebar = () => {
     const location = useLocation();
+    const currentYear = new Date().getFullYear();
 
     const LinkSosmed = [
         {
@@ -129,14 +130,14 @@ const Sidebar = () => {
                 ))}
             </div>
 
-            <Link to="/liked-songs">
+            {/* <Link to="/liked-songs">
                 <div className="button-unduh flex justify-center mt-[20px] border py-[8px] rounded-[10px] hover:scale-105 duration-500">
                     <button className="flex items-center gap-[8px] bg-white">
                         <FaSpotify className="text-[#25D865] text-[20px]" />
                         <p className="text-unduh">Liked Songs</p>
                     </button>
                 </div>
-            </Link>
+            </Link> */}
         </div>
     );
 }

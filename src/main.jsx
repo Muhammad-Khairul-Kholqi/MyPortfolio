@@ -15,7 +15,7 @@ import ProjectDetail from './Page/Project/projectDetail';
 import Contact from './Page/Contact/contact';
 import Blog from './Page/Blog/blog';
 import BlogDetail from './Page/Blog/blogDetail';
-import Music from './Page/Music/music';
+// import Music from './Page/Music/music';
 import NotFound from './Template/notFound';
 // import PageTransition from './Utils/pageVariants';
 
@@ -108,14 +108,14 @@ const AnimatedRoutes = () => {
             <BlogDetail />
           }
         />
-        <Route
+        {/* <Route
           path="/liked-songs"
           element={
             <DefaultLayout>
               <Music />
             </DefaultLayout>
           }
-        />
+        /> */}
 
         <Route 
           path="*"
