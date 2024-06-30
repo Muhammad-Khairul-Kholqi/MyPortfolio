@@ -45,24 +45,27 @@ const Sidebar = () => {
                 </div>
             </div>
 
-            <div className="sosmed flex flex-wrap gap-[15px] justify-center mt-[10px]">
-                <a href="https://www.linkedin.com/in/muhammad-khairul-kholqi-b9029b24a/" target="blank">
-                    <div className="hover:text-blue-600 icon-sosmed">
+            <div className="mt-[20px] flex gap-[20px] justify-center flex-wrap">
+                <div className="relative">
+                    <a href="https://www.linkedin.com/in/muhammad-khairul-kholqi-b9029b24a/" target="blank" className="peer hover:text-blue-600">
                         <FaLinkedinIn />
-                    </div>
-                </a>
+                    </a>
+                    <div id="tooltipExample" className="absolute bg-[#E5E5E5] -top-9 left-1/2 -translate-x-1/2 z-10 whitespace-nowrap rounded px-2 py-1 text-center text-sm opacity-0 transition-all ease-out peer-hover:opacity-100 peer-focus:opacity-100" role="tooltip">Linkedin</div>
+                </div>
 
-                <a href="https://www.instagram.com/kkyhrl/" target="blank">
-                    <div className="hover:text-blue-600 icon-sosmed">
+                <div className="relative">
+                    <a href="https://www.instagram.com/kkyhrl/" target="blank" className="peer hover:text-blue-600">
                         <FaInstagram />
-                    </div>
-                </a>
+                    </a>
+                    <div id="tooltipExample" className="absolute bg-[#E5E5E5] -top-9 left-1/2 -translate-x-1/2 z-10 whitespace-nowrap rounded px-2 py-1 text-center text-sm opacity-0 transition-all ease-out peer-hover:opacity-100 peer-focus:opacity-100" role="tooltip">Instagram</div>
+                </div>
 
-                <a href="https://github.com/Muhammad-Khairul-Kholqi" target="blank">
-                    <div className="hover:text-blue-600 icon-sosmed">
+                <div className="relative">
+                    <a href="https://github.com/Muhammad-Khairul-Kholqi" target="blank" className="peer hover:text-blue-600">
                         <FiGithub />
-                    </div>
-                </a>
+                    </a>
+                    <div id="tooltipExample" className="absolute bg-[#E5E5E5] -top-9 left-1/2 -translate-x-1/2 z-10 whitespace-nowrap rounded px-2 py-1 text-center text-sm opacity-0 transition-all ease-out peer-hover:opacity-100 peer-focus:opacity-100" role="tooltip">Github</div>
+                </div>
             </div>
 
             <hr className="hr-responsive mt-[20px]" />
