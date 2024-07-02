@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { HiOutlineDownload } from "react-icons/hi";
 import Typed from 'typed.js';
 import { TbCoffee } from "react-icons/tb";
-import Cv from "../../../Assets/KhairulKholqiCv.pdf";
+import Cv from "../../../Assets/KhairulKholqiCV.pdf";
 import "../../../Styles/styleHome.css";
 import "../../../Styles/index.css";
 
@@ -40,12 +40,12 @@ const AboutMeSingkat = () => {
                         </a>
                     </div>
                 </div>
-                <div className="flex gap-[10px] items-center flex-wrap text-[15px] font-medium">
-                    <div className="flex gap-[10px] items-center px-[25px] mt-[10px]">
+                <div className="flex items-center flex-wrap text-[13px] font-medium">
+                    <div className="flex gap-[10px] items-center pl-[25px] mt-[10px]">
                         <div className="bg-black p-[3px] rounded-[50%]"></div>
                         <p>Based in Sukabumi</p>
                     </div>
-                    <div className="flex gap-[10px] items-center flex-wrap px-[25px] mt-[10px]">
+                    <div className="flex gap-[10px] items-center flex-wrap pl-[25px] mt-[10px]">
                         <div className="bg-black p-[3px] rounded-[50%]"></div>
                         <span id="skill" ref={el}></span>
                     </div>
