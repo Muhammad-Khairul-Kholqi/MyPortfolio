@@ -11,7 +11,7 @@ const AboutMeSingkat = () => {
 
     useEffect(() => {
         const options = {
-            strings: ["Specialist Frontend Developer", "Fullstack Web Developer"],
+            strings: ["Fullstack Web Developer", "Specialist Frontend Web Developer"],
             typeSpeed: 100,
             loop: true
         };
