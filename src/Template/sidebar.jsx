@@ -16,7 +16,6 @@ import { TbLayoutDashboard } from "react-icons/tb";
 
 const Sidebar = () => {
     const location = useLocation();
-    const currentYear = new Date().getFullYear();
 
     const LinkSosmed = [
         {
@@ -42,37 +41,43 @@ const Sidebar = () => {
         {
             path: "/",
             icon: <BiHomeSmile />,
-            textIcon: "Home"
+            textIcon: "Home",
+            tooltip: "Home"
         },
 
         {
             path: "/aboutme",
             icon: <LuLeaf />,
-            textIcon: "About"
+            textIcon: "About",
+            tooltip: "About"
         },
 
         {
             path: "/blog",
             icon: <TbPencilMinus />,
-            textIcon: "Blog"
+            textIcon: "Blog",
+            tooltip: "Blog"
         },
 
         {
             path: "/project",
             icon: <LiaBoxSolid />,
-            textIcon: "Project"
+            textIcon: "Project",
+            tooltip: "Project"
         },
 
         {
             path: "/dashboard",
             icon: <TbLayoutDashboard />,
-            textIcon: "Dashboard"
+            textIcon: "Dashboard",
+            tooltip: "Dashboard"
         },
 
         {
             path: "/contact",
             icon: <IoMdPaperPlane />,
-            textIcon: "Contact"
+            textIcon: "Contact",
+            tooltip: "Contact"
         },
     ]
 
@@ -114,8 +119,6 @@ const Sidebar = () => {
                     </div>
                 ))}
             </div>
-
-            <hr className="hr-responsive mt-[20px]" />
 
             <div className="menu-sidebar flex flex-col items-start mt-[20px]">
                 {MenuSidebar.map((menu, index) => (

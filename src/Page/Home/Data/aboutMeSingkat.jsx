@@ -11,7 +11,7 @@ const AboutMeSingkat = () => {
 
     useEffect(() => {
         const options = {
-            strings: ["Frontend Developer", "Web Developer"],
+            strings: ["Specialist Frontend Developer", "Fullstack Web Developer"],
             typeSpeed: 100,
             loop: true
         };
@@ -78,14 +78,6 @@ const AboutMeSingkat = () => {
                             </div>
                             <div id="tooltipExample" className="absolute bg-[#E5E5E5] -top-9 left-1/2 -translate-x-1/2 z-10 whitespace-nowrap rounded px-2 py-1 text-center text-sm opacity-0 transition-all ease-out peer-hover:opacity-100 peer-focus:opacity-100" role="tooltip">Remote worker</div>
                         </div>
-
-                        {/* <div className="flex gap-[5px] items-center justify-center flex-wrap mt-[10px] border py-1 px-3 rounded-full">
-                            <span className="relative flex h-3 w-3">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-                            </span>
-                            <p className="text-[12px]">Hire me.</p>
-                        </div> */}
                     </div>
                 </div>
             </div>
