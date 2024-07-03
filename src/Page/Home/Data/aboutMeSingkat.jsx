@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { HiOutlineDownload } from "react-icons/hi";
 import Typed from 'typed.js';
 import { TbCoffee } from "react-icons/tb";
-import Cv from "../../../Assets/KhairulKholqiCV.pdf";
+import Cv from "../../../Assets/KhairulCV.pdf";
 import "../../../Styles/styleHome.css";
 import "../../../Styles/index.css";
 

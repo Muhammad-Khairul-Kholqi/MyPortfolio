@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LogoCaasatech from "../../Assets/logo/logo-casatech.png";
-import Cv from "../../Assets/KhairulKholqiCV.pdf"
+import Cv from "../../Assets/KhairulCV.pdf"
 import { MdWorkOutline } from "react-icons/md";
 import { HiOutlineDownload } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
