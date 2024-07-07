@@ -46,7 +46,7 @@ const projectsData = [
     image: Box,
     technology: ["Js", "HTML", "CSS"],
     github: "https://github.com/Muhammad-Khairul-Kholqi/DynamicBoxStyler",
-    demo: "",
+    demo: "https://dynamic-box-styler.vercel.app/",
     techImages: [
       Js,
       Html,
