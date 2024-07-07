@@ -13,6 +13,7 @@ import Apotek from '../../Assets/project/apotek.png';
 import Agenda from '../../Assets/project/agenda.png';
 import Box from '../../Assets/project/box-styler.png';
 import Portfolio from '../../Assets/project/portfolio.png';
+import Pokemon from '../../Assets/project/battle-pokemon.png';
 
 import Css from '../../Assets/skills/css.png';
 import Php from '../../Assets/skills/php.png';
@@ -112,6 +113,21 @@ const projectsData = [
       Css,
       Php,
       Mysql
+    ]
+  },
+
+  {
+    slug: 'battle-card-pokemon',
+    title: "Battle Card Pokemon",
+    description: "Battle Card Pokemon is a very simple game where the winning card is determined by the largest number.",
+    image: Pokemon,
+    technology: ["HTML", "CSS", "JS"],
+    github: "https://github.com/Muhammad-Khairul-Kholqi/BattleCardPokemon",
+    demo: "https://battle-card-pokemon.vercel.app/",
+    techImages: [
+      Html,
+      Css,
+      Js
     ]
   },
 ];

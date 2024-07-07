@@ -8,6 +8,7 @@ import Apotek from '../../Assets/project/apotek.png';
 import Agenda from '../../Assets/project/agenda.png';
 import Box from '../../Assets/project/box-styler.png';
 import Portfolio from '../../Assets/project/portfolio.png';
+import Pokemon from '../../Assets/project/battle-pokemon.png';
 
 const projectsData = [
   {
@@ -56,6 +57,14 @@ const projectsData = [
     description: "Web School is a website project that I created as a final semester assignment at school.",
     image: schoolImage,
     technology: ["CSS", "PHP", "MySQL"],
+  },
+
+  {
+    slug: 'battle-card-pokemon',
+    title: "Battle Card Pokemon",
+    description: "Battle Card Pokemon is a very simple game where the winning card is determined by the largest number.",
+    image: Pokemon,
+    technology: ["HTML", "CSS", "JS"],
   },
 ];
 
