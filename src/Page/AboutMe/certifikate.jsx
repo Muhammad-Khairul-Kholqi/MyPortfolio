@@ -14,6 +14,7 @@ import Serfikitat6 from "../../Assets/sertifikat/sertifikat6.png";
 import Serfikitat7 from "../../Assets/sertifikat/sertifikat7.png";
 import Serfikitat8 from "../../Assets/sertifikat/sertifikat8.png";
 import Serfikitat9 from "../../Assets/sertifikat/sertifikat9.jpg";
+import Serfikitat10 from "../../Assets/sertifikat/sertifikat10.png";
 
 const Certifikate = () => {
   const [images] = useState([
@@ -80,6 +81,14 @@ const Certifikate = () => {
         tema: 'Belajar Pemrograman Dasar C++', 
         waktu: '-',
         deskripsi: 'I received this certificate upon completing a C++ learning program by Dunia Coding.'
+    },
+
+    { 
+        src: Serfikitat10, 
+        title: 'Kampus Gratis', 
+        tema: 'Web Design Fundamentals - Transforming Lines Of Code Into Digital Excellence', 
+        waktu: '-',
+        deskripsi: 'I received this certificate after studying HTML CSS and JS and I did several assignments given from each module.'
     },
   ]);
 
