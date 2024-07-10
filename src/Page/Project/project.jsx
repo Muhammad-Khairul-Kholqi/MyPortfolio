@@ -75,9 +75,8 @@ const Project = () => {
 
     useEffect(() => {
         setProjects(projectsData);
-    }, []);
+    }, []); 
 
-    // Filter projects based on searchQuery
     const filteredProjects = projects.filter(project =>
         project.title.toLowerCase().includes(searchQuery.toLowerCase())
     );
@@ -91,9 +90,9 @@ const Project = () => {
 
             <hr className="border-t border-dashed border-gray-500" />
 
-            <div className="mt-[20px]">
+            {/* <div className="mt-[20px]">
               <SearchProject setSearchQuery={setSearchQuery} />
-            </div>
+            </div> */}
 
             <div className="project-list flex flex-wrap justify-start">
                 {filteredProjects.map((project) => (

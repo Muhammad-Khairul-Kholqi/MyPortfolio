@@ -25,12 +25,12 @@ const SearchProject = ({ setSearchQuery }) => {
 
     return (
         <div>
-            <div className="flex items-center border-2 rounded-lg  px-3 py-2 bg-gray-100">
+            <div className="flex items-center border-2 rounded-lg  px-3 py-2 bg-[#F5F5F5]">
                 <FaSearch className="text-gray-500 mr-2" />
                 <input
                     type="text"
                     ref={searchInputRef}
-                    className="flex-1 outline-none bg-gray-100 text-sm sm:text-base"
+                    className="flex-1 outline-none bg-[#F5F5F5] text-sm sm:text-base"
                     placeholder="Search Title"
                     onChange={handleChange}
                 />

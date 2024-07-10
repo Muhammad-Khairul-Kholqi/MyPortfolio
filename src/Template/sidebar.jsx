@@ -1,5 +1,5 @@
+import React, { useEffect, useState } from 'react';
 import { IoIosArrowForward } from "react-icons/io";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/styleSidebar.css";
 import BgProfile from "../Assets/bg-sidebar.jpg";
@@ -14,6 +14,7 @@ import { FaLinkedinIn, FaInstagram} from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { LuLeaf } from "react-icons/lu";
 import { TbLayoutDashboard } from "react-icons/tb";
+import { LuSearch } from "react-icons/lu";
 
 function Sidebar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -126,7 +127,20 @@ function Sidebar() {
                 ))}
             </div>
 
-            <div className="wrapper flex flex-col justify-between  px-[20px]">
+            <div className="px-[20px]">
+                <div className="container-search flex items-center justify-center mt-[20px] bg-[#F5F5F5] rounded-[10px] py-[5px] px-[10px] border-2 border-[#949494]">
+                    <div>
+                        <LuSearch className="icon-search text-[#949494] text-[20px]" />
+                    </div>
+                    <input 
+                        className="bg-[#F5F5F5] w-full outline-none h-[30px] px-[5px]"
+                        placeholder="Search Project"
+                        type="search" 
+                    />
+                </div>
+            </div>
+
+            <div className="wrapper flex flex-col justify-between px-[20px]">
                 <nav className="sidebar-nav">
                     <ul className="nav-menu w-[100%] flex flex-col justify-between">
                         {MenuSidebar.map((item) => (
