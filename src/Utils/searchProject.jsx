@@ -25,7 +25,7 @@ const SearchProject = ({ setSearchQuery }) => {
 
     return (
         <div>
-            <div className="flex items-center border-2 rounded-lg w-full px-3 py-2 bg-gray-100">
+            <div className="flex items-center border-2 rounded-lg  px-3 py-2 bg-gray-100">
                 <FaSearch className="text-gray-500 mr-2" />
                 <input
                     type="text"
@@ -34,10 +34,10 @@ const SearchProject = ({ setSearchQuery }) => {
                     placeholder="Search Title"
                     onChange={handleChange}
                 />
-                <div className="ml-2 bg-gray-200 p-1 rounded flex items-center">
+                {/* <div className="ml-2 bg-gray-200 p-1 rounded flex items-center">
                     <RiKeyboardLine />
                     <span className="ml-1 text-xs sm:text-sm">K</span>
-                </div>
+                </div> */}
             </div>
         </div>
     );

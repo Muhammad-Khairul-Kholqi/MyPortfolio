@@ -1,4 +1,6 @@
-import { Link, useLocation } from 'react-router-dom';
+import { IoIosArrowForward } from "react-icons/io";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../Styles/styleSidebar.css";
 import BgProfile from "../Assets/bg-sidebar.jpg";
 import MyPhoto from "../Assets/my-photo3.jpg";
@@ -8,14 +10,17 @@ import { BiHomeSmile } from "react-icons/bi";
 import { LiaBoxSolid } from "react-icons/lia";
 import { IoMdPaperPlane } from "react-icons/io";
 import { TbPencilMinus } from "react-icons/tb";
-import { TbRouteSquare } from "react-icons/tb";
-import { FaLinkedinIn, FaInstagram, FaWhatsapp, FaSpotify } from "react-icons/fa";
+import { FaLinkedinIn, FaInstagram} from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { LuLeaf } from "react-icons/lu";
 import { TbLayoutDashboard } from "react-icons/tb";
 
-const Sidebar = () => {
-    const location = useLocation();
+function Sidebar() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        setIsOpen(prev => !prev);
+    };
 
     const LinkSosmed = [
         {
@@ -41,64 +46,65 @@ const Sidebar = () => {
         {
             path: "/",
             icon: <BiHomeSmile />,
-            textIcon: "Home",
-            tooltip: "Home"
+            textIcon: "Home"
         },
 
         {
             path: "/aboutme",
             icon: <LuLeaf />,
-            textIcon: "About",
-            tooltip: "About"
+            textIcon: "About"
         },
 
         {
             path: "/blog",
             icon: <TbPencilMinus />,
-            textIcon: "Blog",
-            tooltip: "Blog"
+            textIcon: "Blog"
         },
 
         {
             path: "/project",
             icon: <LiaBoxSolid />,
-            textIcon: "Project",
-            tooltip: "Project"
+            textIcon: "Project"
         },
 
         {
             path: "/dashboard",
             icon: <TbLayoutDashboard />,
-            textIcon: "Dashboard",
-            tooltip: "Dashboard"
+            textIcon: "Dashboard"
         },
 
         {
             path: "/contact",
             icon: <IoMdPaperPlane />,
-            textIcon: "Contact",
-            tooltip: "Contact"
+            textIcon: "Contact"
         },
     ]
 
     return (
-        <div className="container-sidebar p-[20px] w-[270px] h-screen">
-            <div
-                className="my-photo pt-[90px] rounded-[10px] relative"
-                style={{
-                    backgroundImage: `url(${BgProfile})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                }}
-            >
+        <aside className={`sidebar ${isOpen ? "active" : ""} w-[75px] top-0 left-0 bottom-0 fixed bg-white shadow`}>
+            <div className="open-btn bg-[#F5F5F5] shadow-md rounded-full w-[30px] h-[30px] flex items-center cursor-pointer justify-center ml-[-40px] absolute" onClick={toggleSidebar}>
+                <IoIosArrowForward className="material-symbols-outlined text-[20px]" />
+            </div>
+
+            <div className="background p-[20px]">
                 <img 
-                    className="w-[90px] bg-white shadow-md p-[2px] absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 rounded-[50%] hover:scale-105 duration-500"
-                    src={MyPhoto}
+                    className="rounded-[10px] h-[90px] w-[250px]"
+                    src={BgProfile}
                     draggable="false"
                 />
             </div>
 
-            <div className="name-username mt-[60px] text-center">
+            <div className="container-photo flex justify-center px-[20px]">
+                <div className="flex justify-center mt-[-60px] py-[3px] px-[2px] bg-white rounded-full"> 
+                    <img 
+                        className="my-photo max-w-[80px] w-full rounded-full"
+                        src={MyPhoto}
+                        draggable="false"
+                    />
+                </div>
+            </div>
+
+            <div className="name-username  text-center">
                 <div className="flex justify-center items-center gap-[5px]">
                     <p className="full-name text-[20px] font-bold text-[#1F2937] font-sora tracking-tight">Khairul Kholqi</p>
                     <MdVerified className="icon-fullname text-[#60A5FA]" />
@@ -120,28 +126,21 @@ const Sidebar = () => {
                 ))}
             </div>
 
-            <div className="menu-sidebar flex flex-col items-start mt-[20px]">
-                {MenuSidebar.map((menu, index) => (
-                    <Link key={index} to={menu.path} className="w-full mt-[10px]">
-                        <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === `${menu.path}` ? 'bg-[#F5F5F5] text-black' : ''}`}>
-                            <div  className="icon-menu text-[18px]">
-                                {menu.icon}
-                            </div>
-                            <p className="text-menu text-[15px] hover:translate-x-2 duration-500">{menu.textIcon}</p>
-                        </div>
-                    </Link>
-                ))}
+            <div className="wrapper flex flex-col justify-between  px-[20px]">
+                <nav className="sidebar-nav">
+                    <ul className="nav-menu w-[100%] flex flex-col justify-between">
+                        {MenuSidebar.map((item) => (
+                            <li key={item.name} className="nav-menu__item">
+                                <Link to={item.path} className="nav-menu_link flex items-center">
+                                    <span className="material-symbols-outlined icon">{item.icon}</span>
+                                    <span className={`text ${isOpen ? 'visible' : 'hidden'} hover:translate-x-2 duration-500`}>{item.textIcon}</span>
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
             </div>
-
-            {/* <Link to="/liked-songs">
-                <div className="button-unduh flex justify-center mt-[20px] border py-[8px] rounded-[10px] hover:scale-105 duration-500">
-                    <button className="flex items-center gap-[8px] bg-white">
-                        <FaSpotify className="text-[#25D865] text-[20px]" />
-                        <p className="text-unduh">Liked Songs</p>
-                    </button>
-                </div>
-            </Link> */}
-        </div>
+        </aside>
     );
 }
 

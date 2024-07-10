@@ -76,7 +76,7 @@ const SoftSkills = () => {
         <p className="text-[16px] pl-[25px] text-[#525252]">Swipe or drag to see more</p>
         <div
           ref={carouselRef}
-          className="w-full overflow-hidden cursor-grab gap-[20px] mt-[10px]"
+          className="w-full overflow-hidden cursor-grab gap-[20px] mt-[10px] text-justify"
           onMouseDown={handleDown}
           onMouseLeave={handleLeave}
           onMouseUp={handleUp}

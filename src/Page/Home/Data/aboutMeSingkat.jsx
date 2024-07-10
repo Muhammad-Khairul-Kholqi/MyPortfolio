@@ -11,7 +11,7 @@ const AboutMeSingkat = () => {
 
     useEffect(() => {
         const options = {
-            strings: ["Fullstack Web Developer", "Specialist Frontend Web Developer"],
+            strings: ["Fullstack Developer", "Specialist Frontend Developer"],
             typeSpeed: 100,
             loop: true
         };
@@ -27,7 +27,7 @@ const AboutMeSingkat = () => {
         <div>
             <div>
                 <div className="flex justify-between items-center gap-[20px]">
-                    <div className="flex gap-[5px] items-center">
+                    <div className="flex gap-[5px] items-center pl-[25px]">
                         <p className="text-[25px] font-sora">Hi, I'm Khairul</p>
                         <p className="shake-animation text-[30px] mt-[-5px]">👋</p>
                     </div>
@@ -40,18 +40,17 @@ const AboutMeSingkat = () => {
                         </a>
                     </div>
                 </div>
-                <div className="flex items-center flex-wrap text-[13px] font-medium">
                     <div className="flex gap-[10px] items-center pl-[25px] mt-[10px]">
                         <div className="bg-black p-[3px] rounded-[50%]"></div>
                         <p>Based in Sukabumi</p>
                     </div>
+
                     <div className="flex gap-[10px] items-center flex-wrap pl-[25px] mt-[10px]">
                         <div className="bg-black p-[3px] rounded-[50%]"></div>
                         <span id="skill" ref={el}></span>
                     </div>
-                </div>
                 <div>
-                    <p className="deskripsi-aboutme mt-[15px] px-[25px] text-[15px] tracking-[0.5px] leading-[30px]">
+                    <p className="deskripsi-aboutme text-justify mt-[15px] px-[25px] text-[15px] tracking-[0.5px] leading-[30px]">
                         Seasoned Software Engineer especially in Frontend side, with a 
                         passion for creating pixel-perfect web experiences. I work with 
                         JavaScript and specialize in all-things web. I thrive on collaborating 

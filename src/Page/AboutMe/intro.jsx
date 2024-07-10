@@ -15,7 +15,7 @@ const Intro = () => {
                         src={ImgMe}
                         alt="Profile"
                     />
-                    <p>
+                    <p className="text-justify">
                         Hello! Thank you for visiting my personal website.
                         <br /><br />
                         I'm Khairul, a web developer who handles both the coding you see on the screen (frontend)

@@ -1,14 +1,16 @@
-import Swal from 'sweetalert2';
+import React, { useState } from 'react';
+import { IoClose } from "react-icons/io5";
 
 const Email = () => {
+    const [showPopup, setShowPopup] = useState(false);
+
     const handleEmailSubmit = (event) => {
         event.preventDefault();
-        Swal.fire({
-            title: "Email Not Sent!",
-            text: "Sorry, we can't send emails at this time",
-            icon: "warning",
-            confirmButtonText: "Ok"
-        });
+        setShowPopup(true);
+    };
+
+    const handleClosePopup = () => {
+        setShowPopup(false);
     };
 
     return (
@@ -16,6 +18,20 @@ const Email = () => {
             <div>
                 <p className="text-[16px]">Or Send Me Email</p>
             </div>
+
+            {showPopup && (
+                <div className="popup flex pt-[10px]">
+                    <div className="popup-inner flex gap-[20px] bg-yellow-50 p-3 rounded-lg border-l-4 border-yellow-500">
+                        <div>
+                            <h2 className="text-lg text-yellow-500">Email Not Sent!</h2>
+                            <p className="text-sm">Sorry, we can't send emails at this time</p>
+                        </div>
+                        <div>
+                            <button onClick={handleClosePopup} className="text-lg text-yellow-500 mt-[6px]"><IoClose /></button>
+                        </div>
+                    </div>
+                </div>
+            )}
 
             <div className="mt-[20px]">
                 <form onSubmit={handleEmailSubmit}>

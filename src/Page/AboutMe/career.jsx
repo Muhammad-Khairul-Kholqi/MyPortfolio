@@ -22,7 +22,7 @@ const careerData = [
 ];
 
 const JobDeskPopup = ({ jobDesk, onClose }) => (
-    <div className="fixed px-[20px] top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+    <div className="fixed px-[20px] top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
         <div className="bg-white p-5 rounded-md max-w-lg w-full">
             <div className="flex gap-[10px] flex-wrap justify-between">
                 <h2 className="text-xl font-semibold">Job Desk</h2>

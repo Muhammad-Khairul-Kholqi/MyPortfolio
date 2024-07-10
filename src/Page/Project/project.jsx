@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CardProject from "./cardProject";
 import Footer from '../../Template/footer';
+import SearchProject from '../../Utils/searchProject';
 
 import schoolImage from '../../Assets/project/school.png';
 import GcTools from '../../Assets/project/gc.png';
@@ -69,31 +70,41 @@ const projectsData = [
 ];
 
 const Project = () => {
-  const [projects, setProjects] = useState([]);
+    const [projects, setProjects] = useState([]);
+    const [searchQuery, setSearchQuery] = useState('');
 
-  useEffect(() => {
-    setProjects(projectsData);
-  }, []);
+    useEffect(() => {
+        setProjects(projectsData);
+    }, []);
 
-  return (
-    <>
-        <div className="pb-[20px]">
-            <p className="text-[24px]">Projects</p>
-            <p className="text-[16px] text-[#525252]">Showcasing my passion for technology, design, and problem-solving through code.</p>
-        </div>
+    // Filter projects based on searchQuery
+    const filteredProjects = projects.filter(project =>
+        project.title.toLowerCase().includes(searchQuery.toLowerCase())
+    );
 
-        <hr className="border-t border-dashed border-gray-500" />
+    return (
+        <>
+            <div className="pb-[20px]">
+                <p className="text-[24px]">Projects</p>
+                <p className="text-[16px] text-[#525252]">Showcasing my passion for technology, design, and problem-solving through code.</p>
+            </div>
 
-        <div className="project-list flex flex-wrap justify-start">
-        {projects.map((project) => (
-            <CardProject key={project.id} project={project} />
-        ))}
-        </div>
-        <div className="mt-[50px]">  
-          <Footer />
-        </div>
-    </>
-  );
+            <hr className="border-t border-dashed border-gray-500" />
+
+            <div className="mt-[20px]">
+              <SearchProject setSearchQuery={setSearchQuery} />
+            </div>
+
+            <div className="project-list flex flex-wrap justify-start">
+                {filteredProjects.map((project) => (
+                    <CardProject key={project.slug} project={project} />
+                ))}
+            </div>
+            <div className="mt-[50px]">
+                <Footer />
+            </div>
+        </>
+    );
 };
 
 export default Project;
