@@ -63,10 +63,10 @@ const Contributions = () => {
                 <FaGithub className="text-[20px]" />
                 <p className="text-[20px]">Contributions</p>
             </div>
-            <div className="flex gap-[20px] flex-wrap items-center justify-between">
+            <div className="flex gap-[50px] flex-wrap items-center justify-start">
                 <p className="text-[#525252]">My contributions from last year on github.</p>
                 <a href="https://github.com/Muhammad-Khairul-Kholqi">
-                    <p className="text-gray-600 italic hover:text-gray-800 pr-[120px]">@Irull's</p>
+                    <p className="text-gray-600 italic hover:text-gray-800 pr-[120px] hover:underline">@Irull's</p>
                 </a>
             </div>
             <div className="summary flex flex-wrap justify-start gap-[20px] mt-[10px]">

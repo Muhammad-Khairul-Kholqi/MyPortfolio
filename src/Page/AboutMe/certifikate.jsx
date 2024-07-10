@@ -103,8 +103,7 @@ const Certifikate = () => {
         </div>  
         <p className="text-[#525252] text-[16px]">Certificate that I have received</p>
 
-        <div className="flex justify-center gap-[30px] flex-wrap px-[20px]">
-
+        <div className="flex justify-start gap-[30px] flex-wrap px-[20px]">
           <div className="p-4">
             <h2 className="text-xl font-bold mb-2">{images[currentImageIndex].title}</h2>
             <div className="flex">

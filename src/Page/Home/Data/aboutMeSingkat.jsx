@@ -26,29 +26,19 @@ const AboutMeSingkat = () => {
     return (
         <div>
             <div>
-                <div className="flex justify-between items-center gap-[20px]">
-                    <div className="flex gap-[5px] items-center pl-[25px]">
-                        <p className="text-[25px] font-sora">Hi, I'm Khairul</p>
-                        <p className="shake-animation text-[30px] mt-[-5px]">👋</p>
-                    </div>
-                    <div className='has-tooltip cursor-pointer'>
-                        <span className='tooltip mt-[-30px] ml-[-15px] text-[12px] bg-[#E5E5E5] p-[5px] rounded-[5px]'>
-                            Sewaria
-                        </span>
-                        <a href="https://saweria.co/khrlkholqi" target="blank">
-                            <TbCoffee className="text-[25px] hover:skew-y-6" />
-                        </a>
-                    </div>
+                <div className="flex gap-[5px] items-center pl-[25px]">
+                    <p className="text-[25px] font-sora">Hi, I'm Khairul</p>
+                    <p className="shake-animation text-[30px] mt-[-5px]">👋</p>
                 </div>
-                    <div className="flex gap-[10px] items-center pl-[25px] mt-[10px]">
-                        <div className="bg-black p-[3px] rounded-[50%]"></div>
-                        <p>Based in Sukabumi</p>
-                    </div>
+                <div className="flex gap-[10px] items-center pl-[25px] mt-[10px]">
+                    <div className="bg-black p-[3px] rounded-[50%]"></div>
+                    <p className="text-[13px]">Based in Sukabumi</p>
+                </div>
 
-                    <div className="flex gap-[10px] items-center flex-wrap pl-[25px] mt-[10px]">
-                        <div className="bg-black p-[3px] rounded-[50%]"></div>
-                        <span id="skill" ref={el}></span>
-                    </div>
+                <div className="flex gap-[10px] items-center flex-wrap pl-[25px] mt-[10px]">
+                    <div className="bg-black p-[3px] rounded-[50%]"></div>
+                    <span id="skill" ref={el} className="text-[13px]"></span>
+                </div>
                 <div>
                     <p className="deskripsi-aboutme text-justify mt-[15px] px-[25px] text-[15px] tracking-[0.5px] leading-[30px]">
                         Seasoned Software Engineer especially in Frontend side, with a 
