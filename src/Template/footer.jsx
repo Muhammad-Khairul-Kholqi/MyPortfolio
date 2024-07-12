@@ -3,6 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
+import { LuCoffee } from "react-icons/lu";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -46,6 +47,12 @@ const Footer = () => {
             link: "https://github.com/Muhammad-Khairul-Kholqi/",
             icon: <FiGithub />,
             textTooltip: "Github"
+        },
+
+        {
+            link: "https://saweria.co/khrlkholqi/",
+            icon: <LuCoffee />,
+            textTooltip: "Sewaria"
         },
     ]
 

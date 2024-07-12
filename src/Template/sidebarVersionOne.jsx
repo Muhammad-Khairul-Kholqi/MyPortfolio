@@ -1,7 +1,7 @@
-// INI ADALAH SIDEBAR SEBELUM YANG BARU
-
-// CODE REACT JS
-// import { Link, useLocation } from 'react-router-dom';
+// sidebar
+// import React, { useEffect, useState } from 'react';
+// import { IoIosArrowForward } from "react-icons/io";
+// import { Link } from "react-router-dom";
 // import "../Styles/styleSidebar.css";
 // import BgProfile from "../Assets/bg-sidebar.jpg";
 // import MyPhoto from "../Assets/my-photo3.jpg";
@@ -11,14 +11,19 @@
 // import { LiaBoxSolid } from "react-icons/lia";
 // import { IoMdPaperPlane } from "react-icons/io";
 // import { TbPencilMinus } from "react-icons/tb";
-// import { TbRouteSquare } from "react-icons/tb";
-// import { FaLinkedinIn, FaInstagram, FaWhatsapp, FaSpotify } from "react-icons/fa";
+// import { FaLinkedinIn, FaInstagram} from "react-icons/fa";
 // import { FiGithub } from "react-icons/fi";
 // import { LuLeaf } from "react-icons/lu";
 // import { TbLayoutDashboard } from "react-icons/tb";
+// import { LuCoffee } from "react-icons/lu";
+// // import { LuSearch } from "react-icons/lu";
 
-// const Sidebar = () => {
-//     const location = useLocation();
+// function Sidebar() {
+//     const [isOpen, setIsOpen] = useState(false);
+
+//     const toggleSidebar = () => {
+//         setIsOpen(prev => !prev);
+//     };
 
 //     const LinkSosmed = [
 //         {
@@ -38,238 +43,270 @@
 //             icon: <FiGithub />,
 //             textTooltip: "Github"
 //         },
+
+        // {
+        //     link: "https://saweria.co/khrlkholqi/",
+        //     icon: <LuCoffee />,
+        //     textTooltip: "Sewaria"
+        // },
 //     ]
 
 //     const MenuSidebar = [
 //         {
 //             path: "/",
 //             icon: <BiHomeSmile />,
-//             textIcon: "Home",
-//             tooltip: "Home"
+//             textIcon: "Home"
 //         },
 
 //         {
 //             path: "/aboutme",
 //             icon: <LuLeaf />,
-//             textIcon: "About",
-//             tooltip: "About"
+//             textIcon: "About"
 //         },
 
 //         {
 //             path: "/blog",
 //             icon: <TbPencilMinus />,
-//             textIcon: "Blog",
-//             tooltip: "Blog"
+//             textIcon: "Blog"
 //         },
 
 //         {
 //             path: "/project",
 //             icon: <LiaBoxSolid />,
-//             textIcon: "Project",
-//             tooltip: "Project"
+//             textIcon: "Project"
 //         },
 
 //         {
 //             path: "/dashboard",
 //             icon: <TbLayoutDashboard />,
-//             textIcon: "Dashboard",
-//             tooltip: "Dashboard"
+//             textIcon: "Dashboard"
 //         },
 
 //         {
 //             path: "/contact",
 //             icon: <IoMdPaperPlane />,
-//             textIcon: "Contact",
-//             tooltip: "Contact"
+//             textIcon: "Contact"
 //         },
 //     ]
 
 //     return (
-//         <div className="container-sidebar p-[20px] w-[270px] h-screen">
-//             <div
-//                 className="my-photo pt-[90px] rounded-[10px] relative"
-//                 style={{
-//                     backgroundImage: `url(${BgProfile})`,
-//                     backgroundSize: 'cover',
-//                     backgroundPosition: 'center',
-//                 }}
-//             >
-//                 <img 
-//                     className="w-[90px] bg-white shadow-md p-[2px] absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 rounded-[50%] hover:scale-105 duration-500"
-//                     src={MyPhoto}
-//                     draggable="false"
-//                 />
-//             </div>
-
-//             <div className="name-username mt-[60px] text-center">
-//                 <div className="flex justify-center items-center gap-[5px]">
-//                     <p className="full-name text-[20px] font-bold text-[#1F2937] font-sora tracking-tight">Khairul Kholqi</p>
-//                     <MdVerified className="icon-fullname text-[#60A5FA]" />
+//         <>
+//             <aside className={`sidebar ${isOpen ? "active" : ""} w-[75px] top-0 left-0 bottom-0 fixed bg-white shadow`}>
+//                 <div className="open-btn bg-[#F5F5F5] shadow-md rounded-full w-[30px] h-[30px] flex items-center cursor-pointer justify-center ml-[-40px] absolute" onClick={toggleSidebar}>
+//                     <IoIosArrowForward className="material-symbols-outlined text-[20px]" />
 //                 </div>
 
-//                 <div>
-//                     <p className="username text-gray-600 text-[13px]">@irull's</p>
+//                 <div className="background p-[20px]">
+//                     <img 
+//                         className="rounded-[10px] h-[90px] w-[250px]"
+//                         src={BgProfile}
+//                         draggable="false"
+//                     />
 //                 </div>
-//             </div>
 
-//             <div className="sosmed mt-[20px] flex gap-[20px] justify-center flex-wrap">
-//                 {LinkSosmed.map((sosmed, index) => (
-//                     <div key={index} className="relative">
-//                         <a href={sosmed.link} target="blank" className="icon-sosmed peer hover:text-blue-600">
-//                             {sosmed.icon}
-//                         </a>
-//                         <div id="tooltipExample" className="absolute bg-[#E5E5E5] -top-9 left-1/2 -translate-x-1/2 z-10 whitespace-nowrap rounded px-2 py-1 text-center text-sm opacity-0 transition-all ease-out peer-hover:opacity-100 peer-focus:opacity-100" role="tooltip">{sosmed.textTooltip}</div>
+//                 <div className="container-photo flex justify-center px-[20px]">
+//                     <div className="flex justify-center mt-[-60px] py-[3px] px-[2px] bg-white rounded-full"> 
+//                         <img 
+//                             className="my-photo max-w-[80px] w-full rounded-full"
+//                             src={MyPhoto}
+//                             draggable="false"
+//                         />
 //                     </div>
-//                 ))}
-//             </div>
-
-//             <div className="menu-sidebar flex flex-col items-start mt-[20px]">
-//                 {MenuSidebar.map((menu, index) => (
-//                     <Link key={index} to={menu.path} className="w-full mt-[10px]">
-//                         <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === `${menu.path}` ? 'bg-[#F5F5F5] text-black' : ''}`}>
-//                             <div  className="icon-menu text-[18px]">
-//                                 {menu.icon}
-//                             </div>
-//                             <p className="text-menu text-[15px] hover:translate-x-2 duration-500">{menu.textIcon}</p>
-//                         </div>
-//                     </Link>
-//                 ))}
-//             </div>
-
-//             {/* <Link to="/liked-songs">
-//                 <div className="button-unduh flex justify-center mt-[20px] border py-[8px] rounded-[10px] hover:scale-105 duration-500">
-//                     <button className="flex items-center gap-[8px] bg-white">
-//                         <FaSpotify className="text-[#25D865] text-[20px]" />
-//                         <p className="text-unduh">Liked Songs</p>
-//                     </button>
 //                 </div>
-//             </Link> */}
-//         </div>
+
+//                 <div className="name-username  text-center">
+//                     <div className="flex justify-center items-center gap-[5px]">
+//                         <p className="full-name text-[20px] font-bold text-[#1F2937] font-sora tracking-tight">Khairul Kholqi</p>
+//                         <MdVerified className="icon-fullname text-[#60A5FA]" />
+//                     </div>
+
+//                     <div>
+//                         <p className="username text-gray-600 text-[13px]">@irull's</p>
+//                     </div>
+//                 </div>
+
+//                 <div className="sosmed mt-[20px] flex gap-[20px] justify-center flex-wrap">
+//                     {LinkSosmed.map((sosmed, index) => (
+//                         <div key={index} className="relative">
+//                             <a href={sosmed.link} target="blank" className="icon-sosmed peer hover:text-blue-600">
+//                                 {sosmed.icon}
+//                             </a>
+//                             <div id="tooltipExample" className="absolute bg-[#E5E5E5] -top-9 left-1/2 -translate-x-1/2 z-10 whitespace-nowrap rounded px-2 py-1 text-center text-sm opacity-0 transition-all ease-out peer-hover:opacity-100 peer-focus:opacity-100" role="tooltip">{sosmed.textTooltip}</div>
+//                         </div>
+//                     ))}
+//                 </div>
+
+//                 {/* <div className="px-[20px]">
+//                     <div className="container-search flex items-center justify-center mt-[20px] bg-[#F5F5F5] rounded-[10px] py-[5px] px-[10px] border-2 border-[#949494]">
+//                         <div>
+//                             <LuSearch className="icon-search text-[#949494] text-[20px]" />
+//                         </div>
+//                         <input 
+//                             className="bg-[#F5F5F5] w-full outline-none h-[30px] px-[5px]"
+//                             placeholder="Search Project"
+//                             type="search" 
+//                         />
+//                     </div>
+//                 </div> */}
+
+//                 <div className="wrapper flex flex-col justify-between px-[20px]">
+//                     <nav className="sidebar-nav">
+//                         <ul className="nav-menu w-[100%] flex flex-col justify-between">
+//                             {MenuSidebar.map((item) => (
+//                                 <li key={item.name} className="nav-menu__item">
+//                                     <Link to={item.path} className="nav-menu_link flex items-center">
+//                                         <span className="material-symbols-outlined icon">{item.icon}</span>
+//                                         <span className={`text ${isOpen ? 'visible' : 'hidden'} hover:translate-x-2 duration-500`}>{item.textIcon}</span>
+//                                     </Link>
+//                                 </li>
+//                             ))}
+//                         </ul>
+//                     </nav>
+//                 </div>
+//             </aside>
+//         </>
 //     );
 // }
 
 // export default Sidebar;
 
 
+// style sidebar
+// :root {
+//     --p-inline: 0.75rem;
+//     --p-block: 0.5rem;
+//     --row-gap: 1rem;
+//     --col-gap: 1.5rem;
+//     --border-radius: 0.75rem;
+// }
 
-// code css
-// .container-sidebar {
-//     overflow-x: auto;
+// .sidebar {
+//     transition: width 0.3s ease-in-out; 
+//      overflow-x: auto;
 //     -ms-overflow-style: none;  
 //     scrollbar-width: none; 
 // }
 
-// .container-sidebar::-webkit-scrollbar {
+// .sidebar::-webkit-scrollbar {
 //     display: none;  
 // }
 
-
-// @media (max-width: 700px) {
-//     .container-sidebar {
-//         width: 200px;
-//     }
-
-//     .my-photo img {
-//         width: 80px;
-//     }
-
+// .sidebar.active {
+//     width: 250px; 
 // }
 
-// @media (max-width: 700px) {
-//     .container-sidebar {
-//         width: 150px;
-//     }
+// .sidebar .wrapper {
+//     transition: transform 0.3s ease-in-out; 
+// }
 
-//     .my-photo img {
-//         width: 70px;
-//     }
+// .sidebar.active .wrapper {
+//     transform: translateX(0); 
+// }
 
-//     .full-name {
-//         font-size: 12px;
-//     }
+// .sidebar .background {
+//     display: none;
+// }
 
-//     .icon-fullname {
-//         font-size: 15px;
-//     }
+// .sidebar.active .background {
+//     display: flex;
+// }
 
-//     .text-unduh {
-//         font-size: 11px;
-//     }
+// .sidebar .my-photo {
+//     width: 50px;
+//     margin-top: 100px;
+// }
 
-//     .text-menu {
-//         font-size: 10px;
-//     }
+// .sidebar.active .my-photo {
+//     width: 90px;
+//     margin-top: -1px;
+// }
 
-//     .icon-menu {
-//         font-size: 15px;
-//     }
+// .sidebar .name-username {
+//     display: none;
+// }
+
+// .sidebar.active .name-username {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+
+// .sidebar .sosmed {
+//     display: none;
+// }
+
+// .sidebar.active .sosmed {
+//     display: flex;
+//     flex-direction: row;
+// }
+
+// .sidebar input {
+//     display: none;
+// }
+
+// .sidebar.active input {
+//     display: flex;
+// }
+
+// .open-btn {
+//     right: calc(var(--p-inline) * 1);
+//     top: var(--p-block);
+//     z-index: 99;
+//     transition: transform 0.6s ease-in;
+// }
+
+// .sidebar.active .open-btn {
+//     transform: rotate(180deg);
+// }
+
+// .sidebar .nav-menu {
+//     row-gap: var(--row-gap);
+// }
+
+
+// .sidebar .nav-menu .nav-menu_link {
+//     border-radius: var(--border-radius);
+//     column-gap: var(--col-gap);
+//     padding-block: var(--p-block);
+//     padding-inline: var(--p-inline);
+// }
+
+// nav {
+//     margin-top: 20px;
+// }
+
+// ::placeholder {
+//     font-size: 13px;
+//     color: #949494;
 // }
 
 // @media (max-width: 470px) {
-//     .container-sidebar {
-//         width: 50px;
+//     .container-photo {
+//         padding-left: 40px;
 //     }
 
-//     .my-photo {
-//         background-image: none !important;
+//     .nav-menu {
+//         padding-left: 5px;
 //     }
 
-//     .my-photo img {
-//         display: none;
+//     .background {
+//         margin-left: 18px;
 //     }
 
-//     .name-username {
-//         display: none;
+//     .container-search {
+//         margin-left: 14px;
+//         padding-left: 10px;
+//         border: 1px solid #949494;
+//         border-radius: 5px;
 //     }
 
-//     .sosmed {
-//         display: none;
-//     }
-
-//     .text-menu,
-//     .text-unduh {
-//         display: none;
-//     }
-
-//     .hr-responsive {
-//         display: none;
-//     }
-
-//     .menu-sidebar {
-//         display: flex;
-//         justify-content: center;
-//         flex-direction: column; 
-//         align-items: center; 
-//         margin-top: -100px;
-//     }
-
-//     .dark-mode {
-//         margin-top: -100px;
-//     }
-
-//     .menu-sidebar > a {
-//         width: auto;
-//         margin-top: 10px;
-//     }
-
-//     .menu-sidebar > a > div {
-//         flex-direction: column; 
-//         align-items: center;
-//         padding: 10px; 
-//     }
-
-//     .menu-sidebar > a > div > p {
-//         display: none; 
-//     }
-
-//     .button-unduh {
-//         border: none;
+//     .icon-search {
+//         font-size: 15px;
 //     }
 // }
 
 
-
-// code main
+// main 
 // import React from 'react';
 // import ReactDOM from 'react-dom';
 // import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
@@ -293,13 +330,13 @@
 
 // const DefaultLayout = ({ children }) => {
 //   return (
-//     <div className="flex justify-center px-[5%] h-screen">
+//     <div className="flex justify-center h-screen">
 //       {/* sidebar */}
-//       <div className="sidebar">
+//       <div className="sidebar z-50">
 //         <Sidebar />
 //       </div>
 
-//       <div className="container-content flex-1 overflow-y-auto p-4">
+//       <div className="container-content flex-1 overflow-y-auto p-4 pl-[90px] pr-[20px]">
 //         {children}
 //       </div>
 //     </div>

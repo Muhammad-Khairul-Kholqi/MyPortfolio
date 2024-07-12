@@ -21,13 +21,13 @@ import NotFound from './Template/notFound';
 
 const DefaultLayout = ({ children }) => {
   return (
-    <div className="flex justify-center h-screen">
+    <div className="flex justify-center px-[5%] h-screen">
       {/* sidebar */}
-      <div className="sidebar z-50">
+      <div className="sidebar">
         <Sidebar />
       </div>
 
-      <div className="container-content flex-1 overflow-y-auto p-4 pl-[90px] pr-[20px]">
+      <div className="container-content flex-1 overflow-y-auto p-4">
         {children}
       </div>
     </div>

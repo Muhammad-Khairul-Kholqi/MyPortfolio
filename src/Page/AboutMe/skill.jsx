@@ -29,11 +29,11 @@ const Skill = () => {
 
     // Array of skills for the second marquee
     const marqueeContent2 = [
-        { imgSrc: ReactImg, name: "React JS" },
         { imgSrc: VueImg, name: "Vue JS" },
         { imgSrc: Php, name: "PHP" },
         { imgSrc: Laravel, name: "Laravel" },
         { imgSrc: Alpine, name: "Alpine Js" },
+        { imgSrc: ReactImg, name: "React JS" },
         { imgSrc: Express, name: "Express" },
         { imgSrc: Js, name: "JavaScript" }
     ];

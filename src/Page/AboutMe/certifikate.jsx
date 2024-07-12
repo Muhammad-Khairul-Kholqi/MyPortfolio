@@ -15,6 +15,7 @@ import Serfikitat7 from "../../Assets/sertifikat/sertifikat7.png";
 import Serfikitat8 from "../../Assets/sertifikat/sertifikat8.png";
 import Serfikitat9 from "../../Assets/sertifikat/sertifikat9.jpg";
 import Serfikitat10 from "../../Assets/sertifikat/sertifikat10.png";
+import Serfikitat11 from "../../Assets/sertifikat/sertifikat11.png";
 
 const Certifikate = () => {
   const [images] = useState([
@@ -87,8 +88,16 @@ const Certifikate = () => {
         src: Serfikitat10, 
         title: 'Kampus Gratis', 
         tema: 'Web Design Fundamentals - Transforming Lines Of Code Into Digital Excellence', 
-        waktu: '29 April - 08 July 2023',
+        waktu: '29 April - 08 July 2024',
         deskripsi: 'I received this certificate after studying HTML CSS and JS and I did several assignments given from each module.'
+    },
+
+    { 
+        src: Serfikitat11, 
+        title: 'Free Code Camp', 
+        tema: 'Responsive Web Design', 
+        waktu: '12 July 2024',
+        deskripsi: 'I received this certificate after completing the tasks given by Free Code Camp.'
     },
   ]);
 

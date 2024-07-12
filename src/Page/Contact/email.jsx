@@ -27,7 +27,7 @@ const Email = () => {
                             <p className="text-sm">Sorry, we can't send emails at this time</p>
                         </div>
                         <div>
-                            <button onClick={handleClosePopup} className="text-lg text-yellow-500 mt-[6px]"><IoClose /></button>
+                            <button onClick={handleClosePopup} className="bg-yellow-50 text-lg text-yellow-500 mt-[6px]"><IoClose /></button>
                         </div>
                     </div>
                 </div>

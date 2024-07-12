@@ -32,7 +32,7 @@ const AboutMeSingkat = () => {
                 </div>
                 <div className="flex gap-[10px] items-center pl-[25px] mt-[10px]">
                     <div className="bg-black p-[3px] rounded-[50%]"></div>
-                    <p className="text-[13px]">Based in Sukabumi</p>
+                    <p className="text-[13px]">Based in Sukabumi, West Java</p>
                 </div>
 
                 <div className="flex gap-[10px] items-center flex-wrap pl-[25px] mt-[10px]">
