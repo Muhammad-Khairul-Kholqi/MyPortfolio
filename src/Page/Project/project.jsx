@@ -83,7 +83,7 @@ const Project = () => {
 
     return (
         <>
-            <div className="pb-[20px]">
+            <div className="pb-[20px] mt-[25px]">
                 <p className="text-[24px]">Projects</p>
                 <p className="text-[16px] text-[#525252]">Showcasing my passion for technology, design, and problem-solving through code.</p>
             </div>

@@ -8,8 +8,11 @@
     display: none;  
 }
 
+.container-navbar {
+    display: none;
+}
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .container-sidebar {
         width: 200px;
     }
@@ -17,10 +20,9 @@
     .my-photo img {
         width: 80px;
     }
-
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .container-sidebar {
         width: 150px;
     }
@@ -50,7 +52,17 @@
     }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 700px) {
+    .container-sidebar {
+        display: none;
+    }
+
+    .container-navbar {
+        display: flex;
+    }  
+}
+
+/* @media (max-width: 470px) {
     .container-sidebar {
         width: 50px;
     }
@@ -110,4 +122,4 @@
     .button-unduh {
         border: none;
     }
-}
+} */

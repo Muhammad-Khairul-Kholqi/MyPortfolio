@@ -5,7 +5,7 @@ import Footer from "../../Template/footer";
 const Contact = () => {
     return (
         <div>
-            <div className="pb-[20px]">
+            <div className="pb-[20px] mt-[25px]">
                 <p className="font-medium text-[25px]">Contact</p>
                 <p className="text-[18px]">Let`s get in touch</p>
             </div>

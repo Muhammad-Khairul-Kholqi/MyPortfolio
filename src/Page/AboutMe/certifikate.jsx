@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import { PiCertificate } from "react-icons/pi";
 import { FaRegCalendarAlt } from "react-icons/fa";
@@ -24,82 +24,80 @@ const Certifikate = () => {
         title: 'PT. Catur Sangkara Teknologi', 
         tema: 'Internship', 
         waktu: '22 January 2024 - 21 June 2024',
-        deskripsi: 'I received this certificate after completing a 6-month internship at PT. Catur Sangkara Teknologi, where my job was as a frontend developer.'
+        deskripsi: 'This certificate marks the successful completion of a 6-month internship as a frontend developer at PT. Catur Sangkara Teknologi.'
     },
     { 
         src: Serfikitat1, 
         title: 'Wanteknologi', 
-        tema: 'Front-end Development with The Progressive JavaScript Framework Vue.JS ', 
+        tema: 'Front-end Development with The Progressive JavaScript Framework Vue.JS', 
         waktu: '30 October - 03 November 2023',
-        deskripsi: 'I received this certificate after completing a Vue JS learning program with Wanteknologi Company.'
+        deskripsi: 'Awarded upon finishing a comprehensive Vue JS learning program hosted by Wanteknologi Company.'
     },
     { 
         src: Serfikitat2, 
         title: 'Cyberlabs', 
         tema: 'Backend Development With JavaScript Framework', 
         waktu: '10 November 2023',
-        deskripsi: 'I received this certificate after completing a backend development course using Node.js and Express.js from Cyberlabs.'
+        deskripsi: 'Achieved this certification after completing an intensive course in backend development using Node.js and Express.js at Cyberlabs.'
     },
     { 
         src: Serfikitat3, 
         title: 'Dicoding', 
         tema: 'Belajar Dasar Pemrograman Web', 
         waktu: '22 September 2023',
-        deskripsi: 'I received this certificate after completing a basic web programming course from the renowned platform Dicoding.'
+        deskripsi: 'This certificate celebrates my completion of a foundational web programming course from the esteemed Dicoding platform.'
     },
     { 
         src: Serfikitat4, 
         title: 'Creative Station', 
         tema: 'Menguasai Mikrokontroller dan Pemrograman Dasar dengan Arduino', 
         waktu: '28 August 2022',
-        deskripsi: 'I received this certificate after completing a course on Arduino via Zoom with an expert in the field, organized by Creative Station.'
+        deskripsi: 'Earned this certificate after participating in an engaging Arduino course via Zoom with a leading expert, organized by Creative Station.'
     },
     { 
         src: Serfikitat5, 
         title: 'Dunia Coding', 
         tema: 'Membuat Aplikasi To Do List dengan Laravel', 
         waktu: '-',
-        deskripsi: 'I received this certificate after completing a course on developing applications using the Laravel framework, organized by Dunia Coding.'
+        deskripsi: 'This certificate is a testament to my skills developed through a course on Laravel application development, hosted by Dunia Coding.'
     },
     { 
         src: Serfikitat6, 
         title: 'Kemendikbud', 
         tema: 'Uji Kemahiran Berbahasa Indonesia', 
         waktu: '29 September 2023',
-        deskripsi: 'In spite of not obtaining this certificate from programming studies, I am proud to have received it, and its value is quite satisfying to me.'
+        deskripsi: 'While not directly related to programming, this certificate reflects my achievement in mastering the Indonesian language.'
     },
     { 
         src: Serfikitat7, 
         title: 'Dunia Coding', 
         tema: 'Tutorial Data Tables Server Side dengan Laravel', 
         waktu: '-',
-        deskripsi: 'I received this certificate after completing a course on Data Tables Server Side with Laravel, organized by Dunia Coding.'
+        deskripsi: 'Successfully completed a course on Data Tables Server Side with Laravel, earning this certificate from Dunia Coding.'
     },
-
     { 
         src: Serfikitat8, 
         title: 'Dunia Coding', 
         tema: 'Belajar Pemrograman Dasar C++', 
         waktu: '-',
-        deskripsi: 'I received this certificate upon completing a C++ learning program by Dunia Coding.'
+        deskripsi: 'This certificate acknowledges my dedication in completing a C++ learning program offered by Dunia Coding.'
     },
-
     { 
         src: Serfikitat10, 
         title: 'Kampus Gratis', 
         tema: 'Web Design Fundamentals - Transforming Lines Of Code Into Digital Excellence', 
         waktu: '29 April - 08 July 2024',
-        deskripsi: 'I received this certificate after studying HTML CSS and JS and I did several assignments given from each module.'
+        deskripsi: 'Celebrating my journey through HTML, CSS, and JS, this certificate was awarded for completing various assignments in the course.'
     },
-
     { 
         src: Serfikitat11, 
         title: 'Free Code Camp', 
         tema: 'Responsive Web Design', 
         waktu: '12 July 2024',
-        deskripsi: 'I received this certificate after completing the tasks given by Free Code Camp.'
+        deskripsi: 'This certificate represents the successful completion of tasks and challenges set forth by Free Code Camp.'
     },
   ]);
+
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -131,7 +129,7 @@ const Certifikate = () => {
           <div className="w-[400px]">
             <img 
                 src={images[currentImageIndex].src}
-                className="w-full shadow-md rounded-[10px]"
+                className="w-full shadow-md"
             />
 
             <div className="flex justify-end mt-4 gap-[10px]">

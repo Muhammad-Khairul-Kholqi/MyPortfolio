@@ -21,7 +21,7 @@ import NotFound from './Template/notFound';
 
 const DefaultLayout = ({ children }) => {
   return (
-    <div className="flex justify-center px-[5%] h-screen">
+    <div className="sidebar-content flex justify-center px-[5%] h-screen">
       {/* sidebar */}
       <div className="sidebar">
         <Sidebar />
