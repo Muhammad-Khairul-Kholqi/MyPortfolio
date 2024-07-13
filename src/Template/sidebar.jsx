@@ -170,8 +170,8 @@ const Sidebar = () => {
                             <MdVerified className="icon-fullname text-[#60A5FA]" />
                         </div>
                     </div>
-                    <button onClick={() => setIsOpen(!isOpen)} className="md:hidden focus:outline-none">
-                        {isOpen ? (
+                    <button onClick={() => setIsOpen(!isOpen)} className="md:hidden focus:outline-none bg-white">
+                        {isOpen ? ( 
                             <HiOutlineX className="text-3xl" />
                         ) : (
                             <HiOutlineBars3BottomRight className="text-3xl" />
@@ -193,10 +193,10 @@ const Sidebar = () => {
                     <ul className="flex flex-col md:flex-row md:space-x-6 md:py-0 py-4">
                         {MenuSidebar.map(({ path, icon, textIcon }) => (
                             <li key={textIcon} className="transition-transform transform-gpu hover:translate-y-1">
-                                <a href={path} className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === path ? 'bg-[#F5F5F5] text-black' : ''}`}>
+                                <Link to={path} className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === path ? 'bg-[#F5F5F5] text-black' : ''}`}>
                                     {icon}
                                     <span className="ml-2">{textIcon}</span>
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
