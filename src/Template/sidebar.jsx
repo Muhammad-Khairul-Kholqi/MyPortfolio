@@ -118,7 +118,7 @@ const Sidebar = () => {
                     </div>
 
                     <div>
-                        <p className="username text-gray-600 text-[13px]">@irull's</p>
+                        <p className="username text-gray-600 text-[13px]">@irulsss</p>
                     </div>
                 </div>
 
@@ -136,24 +136,17 @@ const Sidebar = () => {
                 <div className="menu-sidebar flex flex-col items-start mt-[20px]">
                     {MenuSidebar.map((menu, index) => (
                         <Link key={index} to={menu.path} className="w-full mt-[10px]">
-                            <div className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === `${menu.path}` ? 'bg-[#F5F5F5] text-black' : ''}`}>
-                                <div  className="icon-menu text-[18px]">
+                            <div className={`group flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === `${menu.path}` ? 'bg-[#F5F5F5] text-black' : ''}`}>
+                                <div className="icon-menu text-[18px] group-hover:rotate-12 duration-500">
                                     {menu.icon}
                                 </div>
-                                <p className="text-menu text-[15px] hover:translate-x-2 duration-500">{menu.textIcon}</p>
+                                <p className="text-menu text-[15px] group-hover:translate-x-2 duration-500">
+                                    {menu.textIcon}
+                                </p>
                             </div>
                         </Link>
                     ))}
                 </div>
-
-                {/* <Link to="/liked-songs">
-                    <div className="button-unduh flex justify-center mt-[20px] border py-[8px] rounded-[10px] hover:scale-105 duration-500">
-                        <button className="flex items-center gap-[8px] bg-white">
-                            <FaSpotify className="text-[#25D865] text-[20px]" />
-                            <p className="text-unduh">Liked Songs</p>
-                        </button>
-                    </div>
-                </Link> */}
             </div>
 
             {/* responsive navbar ukuran 700px */}
@@ -193,9 +186,13 @@ const Sidebar = () => {
                     <ul className="flex flex-col md:flex-row md:space-x-6 md:py-0 py-4">
                         {MenuSidebar.map(({ path, icon, textIcon }) => (
                             <li key={textIcon} className="transition-transform transform-gpu hover:translate-y-1">
-                                <Link to={path} className={`flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === path ? 'bg-[#F5F5F5] text-black' : ''}`}>
-                                    {icon}
-                                    <span className="ml-2">{textIcon}</span>
+                                <Link to={path} className={`group flex items-center gap-5 hover:bg-[#F5F5F5] duration-500 py-2 px-3 rounded-[5px] ${location.pathname === path ? 'bg-[#F5F5F5] text-black' : ''}`}>
+                                    <div className="icon-menu text-[18px] group-hover:rotate-12 duration-500">
+                                        {icon}
+                                    </div>
+                                    <span className="text-menu text-[15px] group-hover:translate-x-2 duration-500">
+                                        {textIcon}
+                                    </span>
                                 </Link>
                             </li>
                         ))}

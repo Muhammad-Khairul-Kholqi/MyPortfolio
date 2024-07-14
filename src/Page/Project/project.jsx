@@ -122,14 +122,14 @@ const Project = () => {
                 <button
                     onClick={handlePreviousPage}
                     disabled={currentPage === 1}
-                    className="px-4 py-2 mx-2 border rounded disabled:opacity-50 hover:shadow"
+                    className="px-4 py-2 mx-2 border rounded disabled:opacity-50 bg-white hover:shadow"
                 >
                     Previous
                 </button>
                 <button
                     onClick={handleNextPage}
                     disabled={currentPage === totalPages}
-                    className="px-4 py-2 mx-2 border rounded disabled:opacity-50 hover:shadow"
+                    className="px-4 py-2 mx-2 border rounded disabled:opacity-50 bg-white hover:shadow"
                 >
                     Next
                 </button>
