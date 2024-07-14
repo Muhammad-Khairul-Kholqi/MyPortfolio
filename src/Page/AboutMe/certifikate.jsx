@@ -98,7 +98,6 @@ const Certifikate = () => {
     },
   ]);
 
-
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   return (
@@ -108,7 +107,7 @@ const Certifikate = () => {
           <PiCertificate className="text-[20px]" />
           <p className="font-medium text-[20px]">Certification</p>
         </div>  
-        <p className="text-[#525252] text-[16px]">Certificate that I have received</p>
+        <p className="text-[#525252] text-[16px]">Total Certificates: {images.length}</p>
 
         <div className="flex justify-start gap-[30px] flex-wrap px-[20px]">
           <div className="p-4">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CardProject from "./cardProject";
 import Footer from '../../Template/footer';
-import SearchProject from '../../Utils/searchProject';
+// import SearchProject from '../../Utils/searchProject'; 
 
 import schoolImage from '../../Assets/project/school.png';
 import GcTools from '../../Assets/project/gc.png';
@@ -19,7 +19,6 @@ const projectsData = [
     image: Portfolio,
     technology: ["React Js", "Tailwind"],
   },
-
   {
     slug: 'dynamic-box-styler',
     title: "Dynamic Box Styler",
@@ -27,7 +26,6 @@ const projectsData = [
     image: Box,
     technology: ["Js", "HTML", "CSS"],
   },
-
   {
     slug: 'gc-tools',
     title: "GC Tools",
@@ -35,7 +33,6 @@ const projectsData = [
     image: GcTools,
     technology: ["Tailwind", "React Js", "MySQL", "Express Js"],
   },
-
   {
     slug: 'apotek-aplication',
     title: "Apotek App",
@@ -43,7 +40,6 @@ const projectsData = [
     image: Apotek,
     technology: ["Laravel", "Bootstrap", "MySQL"],
   },
-
   {
     slug: 'daily-agenda',
     title: "Daily Agenda",
@@ -51,7 +47,6 @@ const projectsData = [
     image: Agenda,
     technology: ["Php", "Css", "MySQL"],
   },
-
   {
     slug: 'school-website',
     title: "Web School",
@@ -59,7 +54,6 @@ const projectsData = [
     image: schoolImage,
     technology: ["CSS", "PHP", "MySQL"],
   },
-
   {
     slug: 'battle-card-pokemon',
     title: "Battle Card Pokemon",
@@ -72,14 +66,36 @@ const projectsData = [
 const Project = () => {
     const [projects, setProjects] = useState([]);
     const [searchQuery, setSearchQuery] = useState('');
+    const [currentPage, setCurrentPage] = useState(1);
+    const projectsPerPage = 4; // Number of projects to display per page
 
     useEffect(() => {
         setProjects(projectsData);
-    }, []); 
+    }, []);
 
     const filteredProjects = projects.filter(project =>
         project.title.toLowerCase().includes(searchQuery.toLowerCase())
     );
+
+    // Calculate the current projects to display
+    const indexOfLastProject = currentPage * projectsPerPage;
+    const indexOfFirstProject = indexOfLastProject - projectsPerPage;
+    const currentProjects = filteredProjects.slice(indexOfFirstProject, indexOfLastProject);
+
+    // Calculate total pages
+    const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
+
+    const handleNextPage = () => {
+        if (currentPage < totalPages) {
+            setCurrentPage(currentPage + 1);
+        }
+    };
+
+    const handlePreviousPage = () => {
+        if (currentPage > 1) {
+            setCurrentPage(currentPage - 1);
+        }
+    };
 
     return (
         <>
@@ -90,15 +106,35 @@ const Project = () => {
 
             <hr className="border-t border-dashed border-gray-500" />
 
+            <p className="text-[16px] text-[#525252] mt-[20px]">Total Projects: {projectsData.length}</p>
+
             {/* <div className="mt-[20px]">
               <SearchProject setSearchQuery={setSearchQuery} />
             </div> */}
 
-            <div className="project-list flex flex-wrap justify-start">
-                {filteredProjects.map((project) => (
+            <div className="project-list flex gap-[20px] flex-wrap justify-start">
+                {currentProjects.map((project) => (
                     <CardProject key={project.slug} project={project} />
                 ))}
             </div>
+
+            <div className="flex mt-[20px]">
+                <button
+                    onClick={handlePreviousPage}
+                    disabled={currentPage === 1}
+                    className="px-4 py-2 mx-2 border rounded disabled:opacity-50 hover:shadow"
+                >
+                    Previous
+                </button>
+                <button
+                    onClick={handleNextPage}
+                    disabled={currentPage === totalPages}
+                    className="px-4 py-2 mx-2 border rounded disabled:opacity-50 hover:shadow"
+                >
+                    Next
+                </button>
+            </div>
+
             <div className="mt-[50px]">
                 <Footer />
             </div>

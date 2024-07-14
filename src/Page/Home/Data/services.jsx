@@ -1,22 +1,21 @@
 import { MdMiscellaneousServices } from "react-icons/md";
-import { FiMonitor } from "react-icons/fi";
+import { AiOutlineCode } from "react-icons/ai";
 import { LuPencilRuler } from "react-icons/lu";
 
 const Services = () => {
     const services = [
         {
-            icon: <FiMonitor />,
-            title: "Website Development",
+            icon: <AiOutlineCode className="text-[#ED6262]" />,
+            title: <span style={{ color: '#ED6262' }}>Website Development</span>,
             hashtags: ["#coding"],
             description: "Create stunning, easy-to-use frontend web applications using modern technologies."
         },
         {
-            icon: <LuPencilRuler />,
-            title: "UI Designer",
+            icon: <LuPencilRuler className="text-[#76D0EB]" />,
+            title: <span style={{ color: '#76D0EB' }}>UI Designer</span>,
             hashtags: ["#design"],
             description: "Provides a modern and responsive design across a variety of devices."
-        },
-        
+        },        
     ];
 
     return (
@@ -29,7 +28,7 @@ const Services = () => {
 
             <div className="flex justify-start flex-wrap gap-[20px] mt-[20px] px-[20px]">
                 {services.map((service, index) => (
-                    <div key={index} className="p-[20px] border bg-[#FAFAFA] rounded-[10px] hover:shadow duration-500 cursor-default">
+                    <div key={index} className="p-[20px] border  rounded-[10px] hover:shadow duration-500 cursor-default">
                         <div className="flex gap-[5px] flex-wrap items-center">
                             {service.icon}
                             <p className="text-[16px]">{service.title}</p>
