@@ -32,7 +32,7 @@ const Sosmed = () => {
             <div className="flex justify-start items-center flex-wrap gap-[20px] mt-[20px]">
                 {socialMediaLinks.map((link, index) => (
                     <a href={link.href} target="blank" key={index}>
-                        <div className="flex gap-[10px] justify-start items-center py-[10px] px-[20px] bg-white border hover:shadow-lg duration-300 rounded-[10px]">
+                        <div className="flex gap-[10px] justify-start items-center py-[10px] px-[20px] w-[270px] bg-white border hover:shadow-lg duration-300 rounded-[10px]">
                             {link.icon}
                             {link.lineColor}
                             <div>

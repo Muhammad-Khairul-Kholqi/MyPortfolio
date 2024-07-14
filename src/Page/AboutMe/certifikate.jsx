@@ -109,23 +109,23 @@ const Certifikate = () => {
         </div>  
         <p className="text-[#525252] text-[16px]">Total Certificates: {images.length}</p>
 
-        <div className="flex justify-start gap-[30px] flex-wrap px-[20px]">
-          <div className="p-4">
-            <h2 className="text-xl font-bold mb-2">{images[currentImageIndex].title}</h2>
+        <div className="flex justify-center gap-[30px] flex-wrap mt-[20px]">
+          <div>
+            <h2 className="text-3xl font-bold mb-2">{images[currentImageIndex].title}</h2>
             <div className="flex">
-              <p className="w-full md:w-[350px] lg:w-[400px] text-[14px]">{images[currentImageIndex].tema}</p>
+              <p className="w-full md:w-[350px] lg:w-[400px] text-[20px]">{images[currentImageIndex].tema}</p>
             </div>
             <div className="flex gap-[5px] items-center text-blue-600 mt-[10px]">
               <FaRegCalendarAlt />
-              <p className="text-[13px]">{images[currentImageIndex].waktu}</p>
+              <p className="text-[17px]">{images[currentImageIndex].waktu}</p>
             </div>
             <p className="mt-[20px] text-[20px] font-bold">Description:</p>
             <div className="flex">
-              <p className="w-full lg:w-[400px] text-[15px] mt-[10px]">{images[currentImageIndex].deskripsi}</p>
+              <p className="w-full lg:w-[400px] text-[17px] mt-[10px]">{images[currentImageIndex].deskripsi}</p>
             </div>
           </div>
 
-          <div className="w-[400px]">
+          <div className="w-[650px]">
             <img 
                 src={images[currentImageIndex].src}
                 className="w-full shadow-md"
