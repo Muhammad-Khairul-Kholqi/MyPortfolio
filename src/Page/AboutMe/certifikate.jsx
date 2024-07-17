@@ -16,6 +16,7 @@ import Serfikitat8 from "../../Assets/sertifikat/sertifikat8.png";
 import Serfikitat9 from "../../Assets/sertifikat/sertifikat9.jpg";
 import Serfikitat10 from "../../Assets/sertifikat/sertifikat10.png";
 import Serfikitat11 from "../../Assets/sertifikat/sertifikat11.png";
+import Serfikitat12 from "../../Assets/sertifikat/sertifikat12.jpg";
 
 const Certifikate = () => {
   const [images] = useState([
@@ -96,6 +97,13 @@ const Certifikate = () => {
         waktu: '12 July 2024',
         deskripsi: 'This certificate represents the successful completion of tasks and challenges set forth by Free Code Camp.'
     },
+    { 
+        src: Serfikitat12, 
+        title: 'Sololearn', 
+        tema: 'Web Development', 
+        waktu: '15 July 2024',
+        deskripsi: 'This certificate shows achievement in completing all tasks and challenges set by Sololearn.'
+    },
   ]);
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -109,23 +117,23 @@ const Certifikate = () => {
         </div>  
         <p className="text-[#525252] text-[16px]">Total Certificates: {images.length}</p>
 
-        <div className="flex justify-center gap-[30px] flex-wrap mt-[20px]">
+        <div className="flex justify-start gap-[30px] flex-wrap mt-[20px]">
           <div>
-            <h2 className="text-3xl font-bold mb-2">{images[currentImageIndex].title}</h2>
+            <h2 className="text-xl font-bold mb-2">{images[currentImageIndex].title}</h2>
             <div className="flex">
-              <p className="w-full md:w-[350px] lg:w-[400px] text-[20px]">{images[currentImageIndex].tema}</p>
+              <p className="w-full md:w-[350px] lg:w-[400px] text-[17px]">{images[currentImageIndex].tema}</p>
             </div>
             <div className="flex gap-[5px] items-center text-blue-600 mt-[10px]">
               <FaRegCalendarAlt />
-              <p className="text-[17px]">{images[currentImageIndex].waktu}</p>
+              <p className="text-[15px]">{images[currentImageIndex].waktu}</p>
             </div>
             <p className="mt-[20px] text-[20px] font-bold">Description:</p>
             <div className="flex">
-              <p className="w-full lg:w-[400px] text-[17px] mt-[10px]">{images[currentImageIndex].deskripsi}</p>
+              <p className="w-full lg:w-[600px] text-[17px] mt-[10px]">{images[currentImageIndex].deskripsi}</p>
             </div>
           </div>
 
-          <div className="w-[650px]">
+          <div className="w-[500px]">
             <img 
                 src={images[currentImageIndex].src}
                 className="w-full shadow-md"
