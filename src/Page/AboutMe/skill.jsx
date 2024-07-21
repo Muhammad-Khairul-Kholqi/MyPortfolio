@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { GrTechnology } from "react-icons/gr";
 import Html from "../../Assets/skills/html.png";
 import Css from "../../Assets/skills/css.png";
@@ -12,27 +11,23 @@ import Laravel from "../../Assets/skills/laravel.png";
 import Mysql from "../../Assets/skills/mysql.png";
 import Express from "../../Assets/skills/express.png";
 import Github from "../../Assets/skills/github.png";
-import Alpine from "../../Assets/skills/alpine.png";
+// import Alpine from "../../Assets/skills/alpine.png";
 import "../../Styles/styleSkill.css";
 
 const Skill = () => {
-    // Array of skills for the first marquee
     const marqueeContent1 = [
         { imgSrc: Html, name: "HTML" },
         { imgSrc: Css, name: "CSS" },
         { imgSrc: Tailwind, name: "Tailwind" },
-        { imgSrc: Alpine, name: "Alpine Js" },
         { imgSrc: Bootstrap, name: "Bootstrap" },
         { imgSrc: Github, name: "Github" },
         { imgSrc: Mysql, name: "MySQL" }
     ];
 
-    // Array of skills for the second marquee
     const marqueeContent2 = [
         { imgSrc: VueImg, name: "Vue JS" },
         { imgSrc: Php, name: "PHP" },
         { imgSrc: Laravel, name: "Laravel" },
-        { imgSrc: Alpine, name: "Alpine Js" },
         { imgSrc: ReactImg, name: "React JS" },
         { imgSrc: Express, name: "Express" },
         { imgSrc: Js, name: "JavaScript" }
