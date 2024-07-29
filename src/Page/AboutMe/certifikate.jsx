@@ -106,7 +106,7 @@ const Certifikate = () => {
         deskripsi: 'This certificate shows achievement in completing all tasks and challenges set by Sololearn.'
     },
     { 
-        src: Serfikitat12, 
+        src: Serfikitat13, 
         title: 'Sololearn', 
         tema: 'Introduction to HTML', 
         waktu: '26 July 2024',
