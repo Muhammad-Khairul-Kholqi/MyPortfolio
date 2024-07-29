@@ -17,6 +17,7 @@ import Serfikitat9 from "../../Assets/sertifikat/sertifikat9.jpg";
 import Serfikitat10 from "../../Assets/sertifikat/sertifikat10.png";
 import Serfikitat11 from "../../Assets/sertifikat/sertifikat11.png";
 import Serfikitat12 from "../../Assets/sertifikat/sertifikat12.jpg";
+import Serfikitat13 from "../../Assets/sertifikat/sertifikat13.jpg";
 
 const Certifikate = () => {
   const [images] = useState([
@@ -102,6 +103,13 @@ const Certifikate = () => {
         title: 'Sololearn', 
         tema: 'Web Development', 
         waktu: '15 July 2024',
+        deskripsi: 'This certificate shows achievement in completing all tasks and challenges set by Sololearn.'
+    },
+    { 
+        src: Serfikitat12, 
+        title: 'Sololearn', 
+        tema: 'Introduction to HTML', 
+        waktu: '26 July 2024',
         deskripsi: 'This certificate shows achievement in completing all tasks and challenges set by Sololearn.'
     },
   ]);
