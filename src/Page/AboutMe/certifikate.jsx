@@ -18,6 +18,7 @@ import Serfikitat10 from "../../Assets/sertifikat/sertifikat10.png";
 import Serfikitat11 from "../../Assets/sertifikat/sertifikat11.png";
 import Serfikitat12 from "../../Assets/sertifikat/sertifikat12.jpg";
 import Serfikitat13 from "../../Assets/sertifikat/sertifikat13.jpg";
+import Serfikitat14 from "../../Assets/sertifikat/sertifikat14.png";
 
 const Certifikate = () => {
   const [images] = useState([
@@ -111,6 +112,13 @@ const Certifikate = () => {
         tema: 'Introduction to HTML', 
         waktu: '26 July 2024',
         deskripsi: 'This certificate shows achievement in completing all tasks and challenges set by Sololearn.'
+    },
+    {
+      src: Serfikitat14,
+      title: 'Unity',
+      tema: 'Unity Essentials Pathway',
+      waktu: '05 December 2024',
+      deskripsi: 'I got this certificate after completing game learning with Unity.'
     },
   ]);
 
