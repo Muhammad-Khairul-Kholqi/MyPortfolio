@@ -118,7 +118,7 @@ const Certifikate = () => {
       title: 'Unity',
       tema: 'Unity Essentials Pathway',
       waktu: '05 December 2024',
-      deskripsi: 'I got this certificate after completing game learning with Unity.'
+      deskripsi: 'I got this certificate after completing game learning with Unity for 1 month.'
     },
   ]);
 
