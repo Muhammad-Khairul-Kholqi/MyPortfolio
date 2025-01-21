@@ -4,7 +4,7 @@ import { FiGithub } from "react-icons/fi";
 const Sosmed = () => {
     const socialMediaLinks = [
         {
-            href: "https://www.linkedin.com/in/muhammad-khairul-kholqi-b9029b24a/",
+            href: "https://www.linkedin.com/in/muhamma-khairul-kholqi-9b9413326/",
             icon: <FaLinkedinIn className="text-[30px] text-blue-600" />,
             lineColor: <div className="bg-blue-600 w-[2.5px] rounded-[50px] h-[40px]"></div>,
             title: "Let's connect",
@@ -18,7 +18,7 @@ const Sosmed = () => {
             subtitle: "Irull's"
         },
         {
-            href: "https://www.instagram.com/kkyhrl/",
+            href: "https://www.instagram.com/khayrl__/",
             icon: <FaInstagram className="text-[30px] text-red-600" />,
             lineColor: <div className="bg-red-600 w-[2.5px] rounded-[50px] h-[40px]"></div>,
             title: "Follow Me",

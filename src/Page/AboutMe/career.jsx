@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import LogoCaasatech from "../../Assets/logo/logo-casatech.png";
+import LogoCasatech from "../../Assets/logo/logo-casatech.png";
+import LogoDigiyote from "../../Assets/logo/logo-digiyote.png";
 import Cv from "../../Assets/KhairulCV.pdf"
-import { MdWorkOutline } from "react-icons/md";
+import { MdWorkOutline } from "react-icons/md"; 
 import { HiOutlineDownload } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 
 const careerData = [
     {
-        logo: LogoCaasatech,
+        logo: LogoCasatech,
         title: "Frontend Developer",
         company: "PT. Catur Sangkara Teknologi",
         location: "Bogor, West Java",
@@ -16,9 +17,36 @@ const careerData = [
         jobDesk: [
             "Design UI with Figma",
             "Create Database with MySQL",
-            "Create Admin Page with React. JS"
+            "Create Admin Page with React JS"
         ]
-    }
+    },
+
+    {
+        logo: LogoDigiyote,
+        title: "Frontend Developer",
+        company: "PT. Digital Youth Technology ",
+        location: "Bogor, West Java",
+        duration: "Aug 2024 - Dec 2024",
+        period: "5 Month",
+        jobDesk: [
+            "Design UI with Figma",
+            "Create Admin Page and Landing Page with React JS"
+        ]
+    },
+
+    {
+        logo: LogoCasatech,
+        title: "Frontend Developer",
+        company: "PT. Catur Sangkara Teknologi ",
+        location: "Bogor, West Java",
+        duration: "Dec 2024 - Feb 2025",
+        period: "5 Month",
+        jobDesk: [
+            "Design UI with Figma",
+            "Create Landing Page, Partner Page, Admin Page with React JS",
+            "Create Helpdesk system with React JS"
+        ]
+    },
 ];
 
 const JobDeskPopup = ({ jobDesk, onClose }) => (
