@@ -25,13 +25,13 @@ const Sidebar = () => {
 
     const LinkSosmed = [
         {
-            link: "https://www.linkedin.com/in/muhammad-khairul-kholqi-b9029b24a/",
+            link: "https://www.linkedin.com/in/muhammad-khairul-kholqi-9b9413326/",
             icon: <FaLinkedinIn />,
             textTooltip: "Linkedin"
         },
 
         {
-            link: "https://www.instagram.com/kkyhrl/",
+            link: "https://www.instagram.com/khayrl__/",
             icon: <FaInstagram />,
             textTooltip: "Instagram"
         },
