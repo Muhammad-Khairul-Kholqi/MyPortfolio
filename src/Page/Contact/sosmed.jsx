@@ -18,7 +18,7 @@ const Sosmed = () => {
             subtitle: "Irull's"
         },
         {
-            href: "https://www.instagram.com/khayrl__/",
+            href: "https://www.instagram.com/kkyhrl/",
             icon: <FaInstagram className="text-[30px] text-red-600" />,
             lineColor: <div className="bg-red-600 w-[2.5px] rounded-[50px] h-[40px]"></div>,
             title: "Follow Me",

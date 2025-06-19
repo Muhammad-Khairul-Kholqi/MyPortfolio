@@ -31,7 +31,7 @@ const Sidebar = () => {
         },
 
         {
-            link: "https://www.instagram.com/khayrl__/",
+            link: "https://www.instagram.com/kkyhrl/",
             icon: <FaInstagram />,
             textTooltip: "Instagram"
         },
@@ -43,7 +43,7 @@ const Sidebar = () => {
         },
 
         {
-            link: "https://saweria.co/khrlkholqi/",
+            link: "https://saweria.co/GcCreation/",
             icon: <LuCoffee />,
             textTooltip: "Sewaria"
         },

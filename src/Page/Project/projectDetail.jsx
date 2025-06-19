@@ -14,6 +14,8 @@ import Agenda from '../../Assets/project/agenda.png';
 import Box from '../../Assets/project/box-styler.png';
 import Portfolio from '../../Assets/project/portfolio.png';
 import Pokemon from '../../Assets/project/battle-pokemon.png';
+import Ppob from '../../Assets/project/ppob.jpeg';
+import Marketplace from '../../Assets/project/marketplace.jpeg';
 
 import Css from '../../Assets/skills/css.png';
 import Php from '../../Assets/skills/php.png';
@@ -128,6 +130,33 @@ const projectsData = [
       Html,
       Css,
       Js
+    ]
+  },
+
+  {
+    slug: 'ppob-dypedia',
+    title: "PPOB Dypedia",
+    description: "At Digital Youth Technology, I developed a PPOB website using React JS, including the super admin page, landing page, and various key features.In addition to designing the UI/ UX from the research stage to prototyping in Figma, I also collaborated with the backend team to ensure data integration and system performance ran optimally.",
+    image: Ppob,
+    technology: ["React JS", "Tailwind", "Express JS"],
+    techImages: [
+      Tailwind,
+      ReactJs,
+      Express
+    ]
+  },
+
+  {
+    slug: 'marketplace-website-for-medicines',
+    title: "Marketplace Website For Medicines",
+    description: "In a joint project with the Ministry of Health, I developed a marketplace website for medicines by building admin, super admin, and landing pages using Laravel. I also designed the UI/UX from user research to prototyping in Figma, and collaborated closely with the backend team to ensure the system ran optimally and met user needs.",
+    image: Marketplace,
+    technology: ["Laravel", "Tailwind", "MySql"],
+    demo: "https://marketplace.casatech.id/",
+    techImages: [
+      Tailwind,
+      Laravel,
+      Mysql
     ]
   },
 ];
